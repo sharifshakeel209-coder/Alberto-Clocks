@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        body {
+    font-family: "Montserrat", sans-serif;
+    background: #0a0a0a;
+    color: #ffffff;
+    overflow-x: hidden;
+        }
+
+    </style>
+</head>
+
+<body>
+  <header class="navbar">
+
+    <a href="#home" class="logo">
+        ALBERTO<span style="color: white;">CLOCKS</span>
+    </a>
+
+    <nav class="nav-links">
+            <a href="index.html">Home</a>
+                <li class="dropdown">
+         <a href="#">Categories ▾</a>
+
+    <ul class="dropdown-menu">
+        <li><a href="luxary.html">Luxury Watches</a></li>
+        <li><a href="smart.html">Smart Watches</a></li>
+        <li><a href="vintage.html">Vintage Watches</a></li>
+    </ul>
+</li>
+            <a href="gallery 2.html">Gallery</a>
+            <a href="contact-us.html">Contact</a>
+            <a href="aboutus.html">Aboutus</a>
+          
+          
+    </nav>
+   <div class="nav-right">
+
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search watches...">
+                <button id="searchBtn">Search</button>
+            </div>
+
+            <button class="cart-icon" id="cartIcon">
+                🛒
+                <span id="cartCount">0</span>
+            </button>
+        </div>
+        <button class="menu-btn" id="menuBtn">
+            ☰
+        </button>
+
+    </header>
+<div>
+        <button class="btn prev" id="prevBtn">
+        
+        </button>
+
+        <button class="btn next" id="nextBtn">
+        
+        </button>
+</div>
+
+    <section class="gallery">
+        <div id="popup" class="popup">
+            <span onclick="closePopup()">&times;</span>
+            <img id="popupImage">
+        </div>
+        <script>
+            function openPopup(src) {
+                document.getElementById("popupImage").src = src;
+                document.getElementById("popup").style.display = "flex";
+            }
+
+            function closePopup() {
+                document.getElementById("popup").style.display = "none";
+            }
+        </script>
+
+
+
+        <h2>Vintage</h2>
+        <div class="gallery-container">
+            <img src="vintage.jpeg" onclick="openPopup(this.src)">
+            <img src="vintage2.jpeg" onclick="openPopup(this.src)">
+            <img src="vintage3.jpeg" onclick="openPopup(this.src)">
+            <img src="vintage4.jpeg" onclick="openPopup(this.src)">
+            <img src="vintage5.jpeg" onclick="openPopup(this.src)">
+            <img src="vintage6.jpeg" onclick="openPopup(this.src)">
+            <img src="vintage7.jpeg" onclick="openPopup(this.src)">
+            <img src="vintage8.jpeg" onclick="openPopup(this.src)">
+              <img src="vintage9.jpeg" onclick="openPopup(this.src)">
+        </div>
+
+
+        <h2>Luxury</h2>
+        <div class="gallery-container">
+            <img src="luxary watch 2.jfif" onclick="openPopup(this.src)">
+            <img src="luxary watch 3.jfif" onclick="openPopup(this.src)">
+            <img src="luxary watch 4.jfif" onclick="openPopup(this.src)">
+            <img src="luxary watch 5.jfif" onclick="openPopup(this.src)">
+            <img src="luxary watch 6.jfif" onclick="openPopup(this.src)">
+            <img src="luxary watch 7.jpeg" onclick="openPopup(this.src)">
+            <img src="luxary watch 8.jpeg" onclick="openPopup(this.src)">
+            <img src="luxary watch 10.jpeg" onclick="openPopup(this.src)">
+            <img src="luxary watch 9.jpeg" onclick="openPopup(this.src)">
+        </div>
+        <h2>Smart</h2>
+
+        <div class="gallery-container">
+            <img src="smart watch 1.jfif" onclick="openPopup(this.src)">
+            <img src="smart watch 2.jfif" onclick="openPopup(this.src)">
+            <img src="smart watch 3.jfif" onclick="openPopup(this.src)">
+            <img src="smart watch 4.jfif" onclick="openPopup(this.src)">
+            <img src="smart watch 5.jfif" onclick="openPopup(this.src)">
+            <img src="smart watch 6.jfif" onclick="openPopup(this.src)">
+            <img src="smart watch 7.jfif" onclick="openPopup(this.src)">
+            <img src="smart watch 8.jfif" onclick="openPopup(this.src)">
+            <img src="smart watch 9.jfif" onclick="openPopup(this.src)">
+        </div>
+    </section>
+    <section class="detail-gallery">
+        <div class="detail-row">
+
+            <div class="detail-img">
+                <img src="detail1.jpeg" alt="Watch">
+            </div>
+
+            <div class="detail-img">
+                <img src="detail2.jpeg" alt="Watch">
+            </div>
+
+            <div class="detail-img">
+                <img src="detail3.jpeg" alt="Watch">
+            </div>
+
+            <div class="detail-img">
+                <img src="detail4.jpeg" alt="Watch">
+            </div>
+
+            <div class="detail-img">
+                <img src="detail5.jpeg" alt="Watch">
+            </div>
+
+            <div class="detail-img">
+                <img src="detail6.jpeg" alt="Watch">
+            </div>
+
+        </div>
+    </section>
+    <div class="cart-panel" id="cartPanel">
+
+        <div class="cart-header">
+
+            <h2>Your Cart</h2>
+
+            <button id="closeCart">
+                ×
+            </button>
+
+        </div>
+
+
+        <div class="cart-items" id="cartItems">
+
+            <p class="empty-cart">
+                Your cart is empty.
+            </p>
+
+        </div>
+
+
+        <div class="cart-footer">
+
+            <div class="cart-total">
+
+                <span>Total:</span>
+
+                <strong id="cartTotal">
+                    $0.00
+                </strong>
+
+            </div>
+
+            <button class="checkout-btn" id="checkoutBtn">
+                Checkout
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+     FOOTER
+===================================================== -->
+
+    <footer id="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-column">
+
+                <h2>ALBERTO<span style="color: white;">CLOCKS</span></h2>
+
+                <p>
+                    Timeless watches designed for those who
+                    appreciate elegance, craftsmanship and style.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="luxary.html">Luxury Watches</a>
+                <a href="smart.html">Smart Watches</a>
+                <a href="vintage.html">Vintage Watches</a>
+
+            </div>
+
+
+             <div class="footer-column">
+
+                <h3>Contact</h3>
+                  <h3>📍 Address</h3>
+                        <p>Karachi, Pakistan</p>
+                           <h3>📞Phone</h3>
+                        <p>+92 300 12345678</p>
+                        <h3>📧Email</h3>
+                        <p>support@albertoclocks.com</p>
+                        <h3>⌚Working Hours</h3>
+                        <p>Mon - Sat: 9:00 AM - 8:00 PM</p>
+                    
+
+            </div>
+
+        </div>
+
+            <div class="social-icons">
+
+    <a href="https://wa.me/923001234567" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <a href="https://www.facebook.com/" target="_blank">
+        <i class="fa-brands fa-facebook"></i>
+    </a>
+
+    <a href="https://www.instagram.com/" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+
+</div>
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 ALBERTOCLOCKS. All Rights Reserved.
+            </p>
+
+        </div>
+        <div>
+
+
+
+<script src="script.js"></script></body>
+
+</html>

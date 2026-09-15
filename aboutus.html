@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<style>
+
+   
+  
+</style>
+<body>
+
+    
+    <header class="navbar">
+
+        <a href="#home" class="logo">
+            ALBERTO<span style="color: white;">CLOCKS</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+                <li class="dropdown">
+         <a href="#">Categories ▾</a>
+
+    <ul class="dropdown-menu">
+        <li><a href="luxary.html">Luxury Watches</a></li>
+        <li><a href="smart.html">Smart Watches</a></li>
+        <li><a href="vintage.html">Vintage Watches</a></li>
+    </ul>
+</li>
+           
+            <a href="gallery 2.html">Gallery</a>
+            <a href="contact-us.html">Contact</a>
+            <a href="aboutus.html">Aboutus</a>
+           
+        </nav>
+
+         <div class="nav-right">
+
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search watches...">
+                <button id="searchBtn">Search</button>
+            </div>
+
+            <button class="cart-icon" id="cartIcon">
+                🛒
+                <span id="cartCount">0</span>
+            </button>
+
+        </div>
+
+        <button class="menu-btn" id="menuBtn">
+            ☰
+        </button>
+
+    </header>
+
+
+
+<div>
+        <button class="btn prev" id="prevBtn">
+        
+        </button>
+
+        <button class="btn next" id="nextBtn">
+        
+        </button>
+</div>
+
+<section class="our-story">
+
+    <div class="story-container">
+
+        <div class="story-content">
+
+            <div class="story-label">
+                Our Story
+            </div>
+
+            <h2 class="story-title">
+                TIME IS<br>
+                <span>EVERYTHING.</span>
+            </h2>
+
+            <p class="story-text">
+                Alberto Clocks was created from a simple idea:
+                a clock should be more than something that tells
+                you the time. It should be a statement of style,
+                precision and personality.
+            </p>
+
+            <p class="story-text">
+                We combine timeless design with modern craftsmanship
+                to create clocks that look exceptional today and
+                remain meaningful for years to come.
+            </p>
+
+            <div class="story-highlight">
+                "Every second matters. We believe your time deserves
+                to be represented beautifully."
+            </div>
+
+        </div>
+
+
+        <div class="story-visual">
+
+            <div class="story-clock">
+
+                <div class="clock-hand-hour"></div>
+                <div class="clock-hand-minute"></div>
+                <div class="clock-center"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     ABOUT US - MOVING WATCH VIDEO
+     ========================================= -->
+
+<section class="about-us">
+
+    <video
+        class="about-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        poster="images/watch-poster.jpg">
+
+        <source
+            src="videos/alberto-watch.mp4"
+            type="video/mp4">
+
+        Your browser does not support video.
+    </video>
+
+
+    <div class="about-overlay"></div>
+
+
+    <div class="about-content">
+
+        <div class="about-small-title">
+            About Alberto Clocks
+        </div>
+
+        <h2 class="about-title">
+            CRAFTED FOR<br>
+            <span>EVERY SECOND.</span>
+        </h2>
+
+        <p class="about-description">
+            At Alberto Clocks, we believe time is not simply
+            something we measure — it is something we experience.
+            Our collection brings together elegant design,
+            attention to detail and a passion for timeless
+            craftsmanship.
+
+            <br><br>
+
+            From the first glance to every passing second,
+            Alberto Clocks is designed to make time feel
+            extraordinary.
+        </p>
+
+        <a href="gallery 2.html" class="about-button">
+            Explore Our Collection
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     OUR VALUES
+     ========================================= -->
+
+<section class="values">
+
+    <div class="values-container">
+
+        <div class="value-card">
+
+            <div class="value-number">01 — PRECISION</div>
+
+            <h3>Every Second Matters</h3>
+
+            <p>
+                We pay attention to the smallest details because
+                precision is at the heart of every great timepiece.
+            </p>
+
+        </div>
+
+
+        <div class="value-card">
+
+            <div class="value-number">02 — DESIGN</div>
+
+            <h3>Timeless Aesthetics</h3>
+
+            <p>
+                Clean lines, sophisticated finishes and modern
+                character come together to create clocks that
+                never go out of style.
+            </p>
+
+        </div>
+
+
+        <div class="value-card">
+
+            <div class="value-number">03 — PASSION</div>
+
+            <h3>Made With Purpose</h3>
+
+            <p>
+                Alberto Clocks is built around a passion for
+                beautiful timepieces and the moments they
+                become part of.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+  <div class="cart-panel" id="cartPanel">
+
+        <div class="cart-header">
+
+            <h2>Your Cart</h2>
+
+            <button id="closeCart">
+                ×
+            </button>
+
+        </div>
+
+
+        <div class="cart-items" id="cartItems">
+
+            <p class="empty-cart">
+                Your cart is empty.
+            </p>
+
+        </div>
+
+
+        <div class="cart-footer">
+
+            <div class="cart-total">
+
+                <span>Total:</span>
+
+                <strong id="cartTotal">
+                    $0.00
+                </strong>
+
+            </div>
+
+            <button class="checkout-btn" id="checkoutBtn">
+                Checkout
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+     FOOTER
+===================================================== -->
+   <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq">
+        <button class="faq-question">
+            What types of watches do you sell?
+            <span>+</span>
+        </button>
+        <div class="faq-answer">
+            <p>We sell luxury, smart, and vintage watches.</p>
+        </div>
+    </div>
+
+    <div class="faq">
+        <button class="faq-question">
+            Do you offer delivery?
+            <span>+</span>
+        </button>
+        <div class="faq-answer">
+            <p>Yes, we offer delivery to different locations.</p>
+        </div>
+    </div>
+
+    <div class="faq">
+        <button class="faq-question">
+            Are your watches original?
+            <span>+</span>
+        </button>
+        <div class="faq-answer">
+            <p>Yes, our watches are authentic and carefully selected.</p>
+        </div>
+    </div>
+
+    <div class="faq">
+        <button class="faq-question">
+            How can I contact you?
+            <span>+</span>
+        </button>
+        <div class="faq-answer">
+            <p>You can contact us through our contact page.</p>
+        </div>
+    </div>
+     </div>
+</section>
+       
+
+    <footer id="footer">
+
+     
+        <div class="footer-container">
+
+            <div class="footer-column">
+
+                <h2>ALBERTO<span style="color: white;">CLOCKS</span></h2>
+
+                <p>
+                    Timeless watches designed for those who
+                    appreciate elegance, craftsmanship and style.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="luxary.html">Luxury Watches</a>
+                <a href="smart.html">Smart Watches</a>
+                <a href="vintage.html">Vintage Watches</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Contact</h3>
+                  <h3>📍 Address</h3>
+                        <p>Karachi, Pakistan</p>
+                           <h3>📞Phone</h3>
+                        <p>+92 300 12345678</p>
+                        <h3>📧Email</h3>
+                        <p>support@albertoclocks.com</p>
+                        <h3>⌚Working Hours</h3>
+                        <p>Mon - Sat: 9:00 AM - 8:00 PM</p>
+                    
+
+            </div>
+        </div>
+
+   <div class="social-icons">
+
+    <a href="https://wa.me/923001234567" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <a href="https://www.facebook.com/" target="_blank">
+        <i class="fa-brands fa-facebook"></i>
+    </a>
+
+    <a href="https://www.instagram.com/" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+
+</div>
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 ALBERTOCLOCKS. All Rights Reserved.
+            </p>
+
+        </div>
+        <div>
+
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>

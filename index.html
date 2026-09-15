@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TIMEORA | Luxury Watches</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+    <header class="navbar">
+
+        <a href="#home" class="logo">
+            ALBERTO<span style="color: white;">CLOCKS</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <li class="dropdown">
+         <a href="#">Categories ▾</a>
+
+    <ul class="dropdown-menu">
+        <li><a href="luxary.html">Luxury Watches</a></li>
+        <li><a href="smart.html">Smart Watches</a></li>
+        <li><a href="vintage.html">Vintage Watches</a></li>
+    </ul>
+</li>
+           
+            <a href="gallery 2.html">Gallery</a>
+            <a href="contact-us.html">Contact</a>
+            <a href="aboutus.html">Aboutus</a>
+         
+        </nav>
+
+        <div class="nav-right">
+
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search watches...">
+                <button id="searchBtn">Search</button>
+            </div>
+
+            <button class="cart-icon" id="cartIcon">
+                🛒
+                <span id="cartCount">0</span>
+            </button>
+
+        </div>
+
+        <button class="menu-btn" id="menuBtn">
+            ☰
+        </button>
+
+    </header>
+
+
+    <!-- =====================================================
+     HERO SLIDER
+===================================================== -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-slide active">
+
+            <img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=1800&q=85"
+                alt="Luxury watch">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <p>TIMEORA COLLECTION</p>
+
+                <h1>
+                    Luxury That<br>
+                    <span>Defines Time</span>
+                </h1>
+
+                <div class="gold-line"></div>
+
+                <p class="hero-description">
+                    Discover elegant timepieces designed for those
+                    who appreciate timeless luxury.
+                </p>
+
+                <a href="luxary.html" class="hero-btn">
+                    Explore Collection
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-slide">
+
+            <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=1800&q=85"
+                alt="Smart watch">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <p>SMART COLLECTION</p>
+
+                <h1>
+                    Technology<br>
+                    <span>Meets Style</span>
+                </h1>
+
+                <div class="gold-line"></div>
+
+                <p class="hero-description">
+                    Modern smart watches combining intelligent
+                    features with sophisticated design.
+                </p>
+
+                <a href="smart.html" class="hero-btn">
+                    Discover Smart
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-slide">
+
+            <img src="https://images.unsplash.com/photo-1539874754764-5a96559165b0?auto=format&fit=crop&w=1800&q=85"
+                alt="Vintage watch">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <p>VINTAGE COLLECTION</p>
+
+                <h1>
+                    Beauty<br>
+                    <span>Never Fades</span>
+                </h1>
+
+                <div class="gold-line"></div>
+
+                <p class="hero-description">
+                    Classic designs inspired by the beauty and
+                    craftsmanship of another era.
+                </p>
+
+                <a href="vintage.html" class="hero-btn">
+                    Explore Vintage
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <button class="slider-btn prev" id="prevBtn">
+            ❮
+        </button>
+
+        <button class="slider-btn next" id="nextBtn">
+            ❯
+        </button>
+
+
+        <div class="slider-dots">
+
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+     LUXURY SHOWCASE
+===================================================== -->
+
+    <section class="showcase-section luxury-showcase" id="luxury-showcase">
+
+        <div class="showcase-container reveal">
+
+            <div class="showcase-image">
+
+                <img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=1200&q=85"
+                    alt="Luxury watch">
+
+                <div class="image-label">
+                    LUXURY COLLECTION
+                </div>
+
+            </div>
+
+
+            <div class="showcase-text">
+
+                <p class="section-tag">
+                    THE ART OF TIME
+                </p>
+
+                <h2>
+                    Luxury <span>Has No Limits</span>
+                </h2>
+
+                <div class="gold-line"></div>
+
+                <p>
+                    Experience the finest expression of watchmaking
+                    with our luxury collection. Every timepiece is
+                    carefully selected for its elegance and character.
+                </p>
+
+                <p>
+                    Designed for special moments and everyday
+                    sophistication, these watches make time truly
+                    memorable.
+                </p>
+
+                <a href="luxary.html" class="outline-btn">
+                    Discover Luxury
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+   
+
+
+    <!-- =====================================================
+     SMART SHOWCASE
+===================================================== -->
+
+    <section class="showcase-section smart-showcase" id="smart-showcase">
+
+        <div class="showcase-container reverse reveal">
+
+            <div class="showcase-image">
+
+                <img src="images (5).jpg" alt="Smart watch">
+
+                <div class="image-label">
+                    SMART COLLECTION
+                </div>
+
+            </div>
+
+
+            <div class="showcase-text">
+
+                <p class="section-tag">
+                    SMARTER TIME
+                </p>
+
+                <h2>
+                    Technology <span>Meets Style</span>
+                </h2>
+
+                <div class="gold-line"></div>
+
+                <p>
+                    Stay connected with smart watches designed for
+                    modern life. Powerful features meet elegant
+                    watchmaking-inspired design.
+                </p>
+
+                <p>
+                    From everyday activity tracking to notifications,
+                    these smart watches keep technology close to your wrist.
+                </p>
+
+                <a href="smart.html" class="outline-btn">
+                    Discover Smart
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+   
+
+    <!-- =====================================================
+     VINTAGE SHOWCASE
+===================================================== -->
+
+    <section class="showcase-section vintage-showcase" id="vintage-showcase">
+
+        <div class="showcase-container reveal">
+
+            <div class="showcase-image">
+
+                <img src="https://images.unsplash.com/photo-1539874754764-5a96559165b0?auto=format&fit=crop&w=1200&q=85"
+                    alt="Vintage classic watch">
+
+                <div class="image-label">
+                    VINTAGE COLLECTION
+                </div>
+
+            </div>
+
+
+            <div class="showcase-text">
+
+                <p class="section-tag">
+                    THE BEAUTY OF THE PAST
+                </p>
+
+                <h2>
+                    Vintage <span>Never Fades</span>
+                </h2>
+
+                <div class="gold-line"></div>
+
+                <p>
+                    Step into the world of classic watchmaking with our
+                    vintage collection. Each timepiece carries the charm,
+                    character and elegance of another era.
+                </p>
+
+                <p>
+                    From traditional leather straps to classic mechanical
+                    designs, these watches bring timeless heritage to
+                    modern style.
+                </p>
+
+                <a href="vintage.html" class="outline-btn">
+                    Discover Vintage
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+<section class="watch-list">
+
+   <div class="logo2">
+    <span>OUR WATCH</span>COLLECTION
+</div>
+
+    <div class="watch-grid">
+
+        <div class="watch-card">
+            <h3>Luxury Classic</h3>
+            <p>Elegant stainless steel watch with a premium black dial and sophisticated design.</p>
+            <strong>$299</strong>
+        </div>
+
+        <div class="watch-card">
+            <h3>Royal Gold</h3>
+            <p>Luxury gold-tone watch with a detailed dial and premium bracelet for a royal look.</p>
+            <strong>$399</strong>
+        </div>
+
+        <div class="watch-card">
+            <h3>Executive Black</h3>
+            <p>Modern black watch with a clean dial and durable design for professional use.</p>
+            <strong>$249</strong>
+        </div>
+
+        <div class="watch-card">
+            <h3>Silver Prestige</h3>
+            <p>Classic silver watch with polished finishing and reliable movement.</p>
+            <strong>$279</strong>
+        </div>
+
+        <div class="watch-card">
+            <h3>Golden Heritage</h3>
+            <p>Vintage-inspired gold watch with a traditional dial and elegant bracelet.</p>
+            <strong>$449</strong>
+        </div>
+
+        <div class="watch-card">
+            <h3>Modern Chronograph</h3>
+            <p>Sporty chronograph watch with multiple sub-dials and premium construction.</p>
+            <strong>$329</strong>
+        </div>
+
+        <div class="watch-card">
+            <h3>Ocean Blue</h3>
+            <p>Stylish blue-dial watch with stainless steel case and modern appearance.</p>
+            <strong>$259</strong>
+        </div>
+
+        <div class="watch-card">
+            <h3>Midnight Steel</h3>
+            <p>Dark stainless steel watch with a minimalist dial and bold contemporary style.</p>
+            <strong>$319</strong>
+        </div>
+
+        <div class="watch-card">
+            <h3>Vintage Leather</h3>
+            <p>Classic vintage watch with a premium leather strap and timeless design.</p>
+            <strong>$229</strong>
+        </div>
+
+        <div class="watch-card">
+            <h3>Diamond Elite</h3>
+            <p>Premium luxury watch with elegant detailing and sparkling decorative accents.</p>
+            <strong>$599</strong>
+        </div>
+
+        <div class="watch-card">
+            <h3>Urban Smart</h3>
+            <p>Modern smartwatch-inspired design with a clean display and lightweight body.</p>
+            <strong>$199</strong>
+        </div>
+
+        <div class="watch-card">
+            <h3>Classic Brown</h3>
+            <p>Elegant brown leather watch with a detailed dial and polished case.</p>
+            <strong>$239</strong>
+        </div>
+
+        <div class="watch-card">
+            <h3>Titanium Pro</h3>
+            <p>Lightweight sporty watch with modern styling and a durable construction.</p>
+            <strong>$379</strong>
+        </div>
+
+        <div class="watch-card">
+            <h3>Royal Blue Chronograph</h3>
+            <p>Bold blue chronograph with detailed sub-dials and metallic finishing.</p>
+            <strong>$359</strong>
+        </div>
+
+        <div class="watch-card">
+            <h3>Classic White</h3>
+            <p>Minimal white dial with elegant markers and a refined premium case.</p>
+            <strong>$219</strong>
+        </div>
+
+        <div class="watch-card">
+            <h3>Black Luxury</h3>
+            <p>Premium all-black watch with bold details and a powerful luxury appearance.</p>
+            <strong>$429</strong>
+        </div>
+
+        <div class="watch-card">
+            <h3>Heritage Automatic</h3>
+            <p>Traditional automatic-inspired watch with detailed mechanical styling.</p>
+            <strong>$489</strong>
+        </div>
+
+        <div class="watch-card">
+            <h3>Silver Chrono</h3>
+            <p>Sporty silver chronograph with multiple dial details and premium bracelet.</p>
+            <strong>$339</strong>
+        </div>
+
+        <div class="watch-card">
+            <h3>Elegant Rose</h3>
+            <p>Rose-gold inspired watch with an elegant dial and sophisticated bracelet.</p>
+            <strong>$369</strong>
+        </div>
+
+        <div class="watch-card">
+            <h3>Sport Pro</h3>
+            <p>Durable sporty watch with a bold dial designed for an active lifestyle.</p>
+            <strong>$289</strong>
+        </div>
+
+        <div class="watch-card">
+            <h3>Royal Silver</h3>
+            <p>Premium silver-tone watch with an elegant dial and polished bracelet.</p>
+            <strong>$399</strong>
+        </div>
+
+        <div class="watch-card">
+            <h3>Mechanical Skeleton</h3>
+            <p>Eye-catching mechanical skeleton design with sophisticated luxury styling.</p>
+            <strong>$549</strong>
+        </div>
+
+        <div class="watch-card">
+            <h3>Platinum Elite</h3>
+            <p>High-end inspired watch with premium metallic finishing and detailed dial.</p>
+            <strong>$699</strong>
+        </div>
+
+        <div class="watch-card">
+            <h3>Classic Black Leather</h3>
+            <p>Traditional black leather watch with a clean dial and timeless appearance.</p>
+            <strong>$259</strong>
+        </div>
+
+
+    </div>
+
+</section>
+    <!-- =====================================================
+     CART PANEL
+===================================================== -->
+
+    <div class="cart-panel" id="cartPanel">
+
+        <div class="cart-header">
+
+            <h2>Your Cart</h2>
+
+            <button id="closeCart">
+                ×
+            </button>
+
+        </div>
+
+
+        <div class="cart-items" id="cartItems">
+
+            <p class="empty-cart">
+                Your cart is empty.
+            </p>
+
+        </div>
+
+
+        <div class="cart-footer">
+
+            <div class="cart-total">
+
+                <span>Total:</span>
+
+                <strong id="cartTotal">
+                    $0.00
+                </strong>
+
+            </div>
+
+            <button class="checkout-btn" id="checkoutBtn">
+                Checkout
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+     FOOTER
+===================================================== -->
+
+    <footer id="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-column">
+
+                <h2>ALBERTO<span style="color: white;">CLOCKS</span></h2>
+
+                <p>
+                    Timeless watches designed for those who
+                    appreciate elegance, craftsmanship and style.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="luxary.html">Luxury Watches</a>
+                <a href="smart.html">Smart Watches</a>
+                <a href="vintage.html">Vintage Watches</a>
+
+            </div>
+
+
+           <div class="footer-column">
+
+                <h3>Contact</h3>
+                  <h3>📍 Address</h3>
+                        <p>Karachi, Pakistan</p>
+                           <h3>📞Phone</h3>
+                        <p>+92 300 12345678</p>
+                        <h3>📧Email</h3>
+                        <p>support@albertoclocks.com</p>
+                        <h3>⌚Working Hours</h3>
+                        <p>Mon - Sat: 9:00 AM - 8:00 PM</p>
+                    
+
+            </div>
+
+        </div>
+          
+        <div class="social-icons">
+
+    <a href="https://wa.me/923001234567" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <a href="https://www.facebook.com/" target="_blank">
+        <i class="fa-brands fa-facebook"></i>
+    </a>
+
+    <a href="https://www.instagram.com/" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+
+</div>
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 ALBERTOCLOCKS. All Rights Reserved.
+            </p>
+
+        </div>
+        <div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

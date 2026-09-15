@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+       <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+      <header class="navbar">
+
+        <a href="#home" class="logo">
+            ALBERTO<span style="color: white;">CLOCKS</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+                <li class="dropdown">
+         <a href="#">Categories ▾</a>
+
+    <ul class="dropdown-menu">
+        <li><a href="luxary.html">Luxury Watches</a></li>
+        <li><a href="smart.html">Smart Watches</a></li>
+        <li><a href="vintage.html">Vintage Watches</a></li>
+    </ul>
+</li>
+        
+            <a href="gallery 2.html">Gallery</a>
+            <a href="contact-us.html">Contact</a>
+            <a href="aboutus.html">Aboutus</a>
+           
+        </nav>
+
+        <div class="nav-right">
+
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search watches...">
+                <button id="searchBtn">Search</button>
+            </div>
+
+            <button class="cart-icon" id="cartIcon">
+                🛒
+                <span id="cartCount">0</span>
+            </button>
+
+        </div>
+
+        <button class="menu-btn" id="menuBtn">
+            ☰
+        </button>
+
+    </header>
+
+
+
+<div>
+        <button class="btn prev" id="prevBtn">
+        
+        </button>
+
+        <button class="btn next" id="nextBtn">
+        
+        </button>
+</div>
+    
+    <!-- =====================================================
+     LUXURY PRODUCTS
+===================================================== -->
+
+    <section class="products-section luxury-section" id="luxury-products">
+
+        <div class="section-heading">
+
+            <p>LUXURY COLLECTION</p>
+
+            <h2>
+                Timeless <span>Elegance</span>
+            </h2>
+
+            <div class="heading-line"></div>
+
+            <span>
+                Premium watches created for extraordinary moments.
+            </span>
+
+        </div>
+
+
+        <div class="product-grid">
+
+
+            <!-- Luxury 1 -->
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=85"
+                        alt="Royal Gold">
+
+                    <div class="badge">Premium</div>
+                </div>
+
+                <div class="product-info">
+
+                    <p>Luxury Series</p>
+
+                    <h3>Royal Gold</h3>
+
+                    <span>Elegant gold-tone design with a sophisticated classic dial.</span>
+
+                    <div class="product-bottom">
+
+                        <strong>$850</strong>
+
+                        <div class="product-buttons">
+
+                            <button class="view-btn" data-name="Royal Gold" data-price="850">
+                                View
+                            </button>
+
+                            <button class="add-to-cart" data-name="Royal Gold" data-price="850">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Luxury 2 -->
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&w=800&q=85"
+                        alt="Black Elite">
+
+                    <div class="badge">Elite</div>
+                </div>
+
+                <div class="product-info">
+
+                    <p>Elite Collection</p>
+
+                    <h3>Black Elite</h3>
+
+                    <span>A refined black timepiece with a powerful luxury appearance.</span>
+
+                    <div class="product-bottom">
+
+                        <strong>$920</strong>
+
+                        <div class="product-buttons">
+
+                            <button class="view-btn" data-name="Black Elite" data-price="920">View</button>
+
+                            <button class="add-to-cart" data-name="Black Elite" data-price="920">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Luxury 3 -->
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1495857000853-fe46c8aefc30?auto=format&fit=crop&w=800&q=85"
+                        alt="Golden Crown">
+
+                    <div class="badge">Luxury</div>
+                </div>
+
+                <div class="product-info">
+
+                    <p>Royal Series</p>
+
+                    <h3>Golden Crown</h3>
+
+                    <span>A luxurious design combining classic details with modern elegance.</span>
+
+                    <div class="product-bottom">
+
+                        <strong>$780</strong>
+
+                        <div class="product-buttons">
+
+                            <button class="view-btn" data-name="Golden Crown" data-price="780">View</button>
+
+                            <button class="add-to-cart" data-name="Golden Crown" data-price="780">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Luxury 4 -->
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=800&q=85"
+                        alt="Silver Prestige">
+
+                    <div class="badge">Prestige</div>
+                </div>
+
+                <div class="product-info">
+
+                    <p>Prestige Series</p>
+
+                    <h3>Silver Prestige</h3>
+
+                    <span>Clean silver styling designed for a sophisticated appearance.</span>
+
+                    <div class="product-bottom">
+
+                        <strong>$740</strong>
+
+                        <div class="product-buttons">
+
+                            <button class="view-btn" data-name="Silver Prestige" data-price="740">View</button>
+
+                            <button class="add-to-cart" data-name="Silver Prestige" data-price="740">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Luxury 5 -->
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1434056886845-dac89ffe9b56?auto=format&fit=crop&w=800&q=85"
+                        alt="Grand Master">
+
+                    <div class="badge">Exclusive</div>
+                </div>
+
+                <div class="product-info">
+
+                    <p>Exclusive Series</p>
+
+                    <h3>Grand Master</h3>
+
+                    <span>A bold luxury watch designed to make a lasting impression.</span>
+
+                    <div class="product-bottom">
+
+                        <strong>$990</strong>
+
+                        <div class="product-buttons">
+
+                            <button class="view-btn" data-name="Grand Master" data-price="990">View</button>
+
+                            <button class="add-to-cart" data-name="Grand Master" data-price="990">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Luxury 6 -->
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1508057198894-247b23fe5ade?auto=format&fit=crop&w=800&q=85"
+                        alt="Classic Gold">
+
+                    <div class="badge">Classic</div>
+                </div>
+
+                <div class="product-info">
+
+                    <p>Classic Series</p>
+
+                    <h3>Classic Gold</h3>
+
+                    <span>Traditional styling enhanced with a luxurious golden finish.</span>
+
+                    <div class="product-bottom">
+
+                        <strong>$820</strong>
+
+                        <div class="product-buttons">
+
+                            <button class="view-btn" data-name="Classic Gold" data-price="820">View</button>
+
+                            <button class="add-to-cart" data-name="Classic Gold" data-price="820">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Luxury 7 -->
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img src="images.jpg" alt="Midnight Royal">
+
+                    <div class="badge">Royal</div>
+                </div>
+
+                <div class="product-info">
+
+                    <p>Royal Collection</p>
+
+                    <h3>Midnight Royal</h3>
+
+                    <span>Dark luxury styling with an elegant and powerful character.</span>
+
+                    <div class="product-bottom">
+
+                        <strong>$890</strong>
+
+                        <div class="product-buttons">
+
+                            <button class="view-btn" data-name="Midnight Royal" data-price="890">View</button>
+
+                            <button class="add-to-cart" data-name="Midnight Royal" data-price="890">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Luxury 8 -->
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1548171915-e79a380a2a4b?auto=format&fit=crop&w=800&q=85"
+                        alt="Diamond Edge">
+
+                    <div class="badge">Premium</div>
+                </div>
+
+                <div class="product-info">
+
+                    <p>Premium Series</p>
+
+                    <h3>Diamond Edge</h3>
+
+                    <span>Sharp details and premium styling for a modern luxury look.</span>
+
+                    <div class="product-bottom">
+
+                        <strong>$1,050</strong>
+
+                        <div class="product-buttons">
+
+                            <button class="view-btn" data-name="Diamond Edge" data-price="1050">View</button>
+
+                            <button class="add-to-cart" data-name="Diamond Edge" data-price="1050">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Luxury 9 -->
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1526045431048-f857369baa09?auto=format&fit=crop&w=800&q=85"
+                        alt="Royal Leather">
+
+                    <div class="badge">Leather</div>
+                </div>
+
+                <div class="product-info">
+
+                    <p>Leather Series</p>
+
+                    <h3>Royal Leather</h3>
+
+                    <span>Premium leather styling paired with a refined luxury dial.</span>
+
+                    <div class="product-bottom">
+
+                        <strong>$760</strong>
+
+                        <div class="product-buttons">
+
+                            <button class="view-btn" data-name="Royal Leather" data-price="760">View</button>
+
+                            <button class="add-to-cart" data-name="Royal Leather" data-price="760">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Luxury 10 -->
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?auto=format&fit=crop&w=800&q=85"
+                        alt="Imperial Silver">
+
+                    <div class="badge">Imperial</div>
+                </div>
+
+                <div class="product-info">
+
+                    <p>Imperial Series</p>
+
+                    <h3>Imperial Silver</h3>
+
+                    <span>A sophisticated silver watch created for formal occasions.</span>
+
+                    <div class="product-bottom">
+
+                        <strong>$870</strong>
+
+                        <div class="product-buttons">
+
+                            <button class="view-btn" data-name="Imperial Silver" data-price="870">View</button>
+
+                            <button class="add-to-cart" data-name="Imperial Silver" data-price="870">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Luxury 11 -->
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img src="images (3).jpg" alt="Luxury Chrono">
+
+                    <div class="badge">Chrono</div>
+                </div>
+
+                <div class="product-info">
+
+                    <p>Chronograph Series</p>
+
+                    <h3>Luxury Chrono</h3>
+
+                    <span>A stylish chronograph design with a premium finish.</span>
+
+                    <div class="product-bottom">
+
+                        <strong>$940</strong>
+
+                        <div class="product-buttons">
+
+                            <button class="view-btn" data-name="Luxury Chrono" data-price="940">View</button>
+
+                            <button class="add-to-cart" data-name="Luxury Chrono" data-price="940">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Luxury 12 -->
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img src="images (4).jpg" alt="Timeora Signature">
+
+                    <div class="badge">Signature</div>
+                </div>
+
+                <div class="product-info">
+
+                    <p>Signature Series</p>
+
+                    <h3>Timeora Signature</h3>
+
+                    <span>The signature expression of timeless luxury and elegant design.</span>
+
+                    <div class="product-bottom">
+
+                        <strong>$1,100</strong>
+
+                        <div class="product-buttons">
+
+                            <button class="view-btn" data-name="Timeora Signature" data-price="1100">View</button>
+
+                            <button class="add-to-cart" data-name="Timeora Signature" data-price="1100">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="cart-panel" id="cartPanel">
+
+        <div class="cart-header">
+
+            <h2>Your Cart</h2>
+
+            <button id="closeCart">
+                ×
+            </button>
+
+        </div>
+
+
+        <div class="cart-items" id="cartItems">
+
+            <p class="empty-cart">
+                Your cart is empty.
+            </p>
+
+        </div>
+
+
+        <div class="cart-footer">
+
+            <div class="cart-total">
+
+                <span>Total:</span>
+
+                <strong id="cartTotal">
+                    $0.00
+                </strong>
+
+            </div>
+
+            <button class="checkout-btn" id="checkoutBtn">
+                Checkout
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+     FOOTER
+===================================================== -->
+
+    <footer id="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-column">
+
+                <h2>ALBERTO<span style="color: white;">CLOCKS</span></h2>
+
+                <p>
+                    Timeless watches designed for those who
+                    appreciate elegance, craftsmanship and style.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="luxary.html">Luxury Watches</a>
+                <a href="smart.html">Smart Watches</a>
+                <a href="vintage.html">Vintage Watches</a>
+
+            </div>
+
+
+             <div class="footer-column">
+
+                <h3>Contact</h3>
+                  <h3>📍 Address</h3>
+                        <p>Karachi, Pakistan</p>
+                           <h3>📞Phone</h3>
+                        <p>+92 300 12345678</p>
+                        <h3>📧Email</h3>
+                        <p>support@albertoclocks.com</p>
+                        <h3>⌚Working Hours</h3>
+                        <p>Mon - Sat: 9:00 AM - 8:00 PM</p>
+                    
+
+            </div>
+
+        </div>
+
+            
+        <div class="social-icons">
+
+    <a href="https://wa.me/923001234567" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <a href="https://www.facebook.com/" target="_blank">
+        <i class="fa-brands fa-facebook"></i>
+    </a>
+
+    <a href="https://www.instagram.com/" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+
+</div>
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 ALBERTOCLOCKS. All Rights Reserved.
+            </p>
+
+        </div>
+        <div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
