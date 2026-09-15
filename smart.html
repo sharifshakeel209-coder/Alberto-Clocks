@@ -1,536 +1,547 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
-</style>
-<body>
-    <header class="navbar">
+    </style>
 
-    <a href="#home" class="logo">
-        ALBERTO<span style="color: white;">CLOCKS</span>
-    </a>
+    <body>
+        <header class="navbar">
 
-    <nav class="nav-links">
-            <a href="index.html">Home</a>
-                <li class="dropdown">
-         <a href="#">Categories ▾</a>
+            <a href="#home" class="logo">
+                ALBERTO<span style="color: white;">CLOCKS</span>
+            </a>
 
-    <ul class="dropdown-menu">
-        <li><a href="luxary.html">Luxury Watches</a></li>
-        <li><a href="smart.html">Smart Watches</a></li>
-        <li><a href="vintage.html">Vintage Watches</a></li>
-    </ul>
-</li>
-           
-            <a href="gallery 2.html">Gallery</a>
-            <a href="contact-us.html">Contact</a>
-            <a href="aboutus.html">Aboutus</a>
-            
-          
-    </nav>
-   
-      <div class="nav-right">
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown()">
+                        CATEGORIES <span>▼</span>
+                    </button>
 
-            <div class="search-box">
-                <input type="text" id="searchInput" placeholder="Search watches...">
-                <button id="searchBtn">Search</button>
+                    <div class="dropdown-content" id="categoryDropdown">
+                        <a href="luxury.html">LUXURY</a>
+                        <a href="vintage.html">VINTAGE</a>
+                        <a href="smart.html">SMART WATCHES</a>
+                    </div>
+                </div>
+
+                <a href="gallery 2.html">Gallery</a>
+                <a href="contact-us.html">Contact</a>
+                <a href="aboutus.html">Aboutus</a>
+
+
+            </nav>
+
+            <div class="nav-right">
+
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search watches...">
+                    <button id="searchBtn">Search</button>
+                </div>
+
+                <button class="cart-icon" id="cartIcon">
+                    🛒
+                    <span id="cartCount">0</span>
+                </button>
+
             </div>
 
-            <button class="cart-icon" id="cartIcon">
-                🛒
-                <span id="cartCount">0</span>
+            <button class="menu-btn" id="menuBtn">
+                ☰
             </button>
 
-        </div>
+        </header>
 
-        <button class="menu-btn" id="menuBtn">
-            ☰
-        </button>
 
-    </header>
 
+        <div>
+            <button class="btn prev" id="prevBtn">
 
-
-<div>
-        <button class="btn prev" id="prevBtn">
-        
-        </button>
-
-        <button class="btn next" id="nextBtn">
-        
-        </button>
-
-
-
-
-<section class="products-section smart-section" id="smart-products">
-
-    <div class="section-heading">
-
-        <p>SMART COLLECTION</p>
-
-        <h2>
-            Intelligent <span>Style</span>
-        </h2>
-
-        <div class="heading-line"></div>
-
-        <span>
-            Modern technology designed around your lifestyle.
-        </span>
-
-    </div>
-
-
-    <div class="product-grid">
-
-
-        <!-- Smart 1 -->
-        <div class="product-card">
-
-            <div class="product-image">
-
-                <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=800&q=85" alt="Smart Pro">
-
-                <div class="badge smart-badge">Smart</div>
-
-            </div>
-
-            <div class="product-info">
-
-                <p>Smart Series</p>
-
-                <h3>Smart Pro</h3>
-
-                <span>Modern smart design with useful everyday features.</span>
-
-                <div class="product-bottom">
-
-                    <strong>$320</strong>
-
-                    <div class="product-buttons">
-
-                        <button class="view-btn" data-name="Smart Pro" data-price="320">View</button>
-
-                        <button class="add-to-cart" data-name="Smart Pro" data-price="320">
-                            Add to Cart
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- Smart 2 -->
-        <div class="product-card">
-
-            <div class="product-image">
-
-                <img src="images (2).jpg" alt="Smart Elite">
-
-                <div class="badge smart-badge">Smart</div>
-
-            </div>
-
-            <div class="product-info">
-
-                <p>Elite Smart</p>
-
-                <h3>Smart Elite</h3>
-
-                <span>A clean modern design built for connected everyday life.</span>
-
-                <div class="product-bottom">
-
-                    <strong>$390</strong>
-
-                    <div class="product-buttons">
-
-                        <button class="view-btn" data-name="Smart Elite" data-price="390">View</button>
-
-                        <button class="add-to-cart" data-name="Smart Elite" data-price="390">
-                            Add to Cart
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- Smart 3 -->
-        <div class="product-card">
-
-            <div class="product-image">
-
-                <img src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=800&q=85" alt="Active Fit">
-
-                <div class="badge smart-badge">Active</div>
-
-            </div>
-
-            <div class="product-info">
-
-                <p>Active Series</p>
-
-                <h3>Active Fit</h3>
-
-                <span>A sporty smart watch designed for active daily routines.</span>
-
-                <div class="product-bottom">
-
-                    <strong>$280</strong>
-
-                    <div class="product-buttons">
-
-                        <button class="view-btn" data-name="Active Fit" data-price="280">View</button>
-
-                        <button class="add-to-cart" data-name="Active Fit" data-price="280">
-                            Add to Cart
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- Smart 4 -->
-        <div class="product-card">
-
-            <div class="product-image">
-
-                <img src="https://images.unsplash.com/photo-1551816230-ef5deaed4a26?auto=format&fit=crop&w=800&q=85" alt="Smart Classic">
-
-                <div class="badge smart-badge">Classic</div>
-
-            </div>
-
-            <div class="product-info">
-
-                <p>Classic Smart</p>
-
-                <h3>Smart Classic</h3>
-
-                <span>Classic watch aesthetics combined with modern smart features.</span>
-
-                <div class="product-bottom">
-
-                    <strong>$350</strong>
-
-                    <div class="product-buttons">
-
-                        <button class="view-btn" data-name="Smart Classic" data-price="350">View</button>
-
-                        <button class="add-to-cart" data-name="Smart Classic" data-price="350">
-                            Add to Cart
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- Smart 5 -->
-        <div class="product-card">
-
-            <div class="product-image">
-
-                <img src="https://images.unsplash.com/photo-1617043786394-f977fa12eddf?auto=format&fit=crop&w=800&q=85" alt="Connect X">
-
-                <div class="badge smart-badge">Connect</div>
-
-            </div>
-
-            <div class="product-info">
-
-                <p>Connect Series</p>
-
-                <h3>Connect X</h3>
-
-                <span>Stay connected with a sleek design made for everyday use.</span>
-
-                <div class="product-bottom">
-
-                    <strong>$410</strong>
-
-                    <div class="product-buttons">
-
-                        <button class="view-btn" data-name="Connect X" data-price="410">View</button>
-
-                        <button class="add-to-cart" data-name="Connect X" data-price="410">
-                            Add to Cart
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- Smart 6 -->
-        <div class="product-card">
-
-            <div class="product-image">
-
-                <img src="https://images.unsplash.com/photo-1510017803434-a899398421b3?auto=format&fit=crop&w=800&q=85" alt="Smart Edge">
-
-                <div class="badge smart-badge">Modern</div>
-
-            </div>
-
-            <div class="product-info">
-
-                <p>Modern Series</p>
-
-                <h3>Smart Edge</h3>
-
-                <span>Minimal modern styling with smart functionality.</span>
-
-                <div class="product-bottom">
-
-                    <strong>$365</strong>
-
-                    <div class="product-buttons">
-
-                        <button class="view-btn" data-name="Smart Edge" data-price="365">View</button>
-
-                        <button class="add-to-cart" data-name="Smart Edge" data-price="365">
-                            Add to Cart
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- Smart 7 -->
-        <div class="product-card">
-
-            <div class="product-image">
-
-                <img src="images (7).jpg" alt="Smart Max">
-
-                <div class="badge smart-badge">Pro</div>
-
-            </div>
-
-            <div class="product-info">
-
-                <p>Pro Series</p>
-
-                <h3>Smart Max</h3>
-
-                <span>A powerful smart design created for modern lifestyles.</span>
-
-                <div class="product-bottom">
-
-                    <strong>$450</strong>
-
-                    <div class="product-buttons">
-
-                        <button class="view-btn" data-name="Smart Max" data-price="450">View</button>
-
-                        <button class="add-to-cart" data-name="Smart Max" data-price="450">
-                            Add to Cart
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- Smart 8 -->
-        <div class="product-card">
-
-            <div class="product-image">
-
-                <img src="images (6).jpg" alt="Smart Signature">
-
-                <div class="badge smart-badge">Signature</div>
-
-            </div>
-
-            <div class="product-info">
-
-                <p>Signature Series</p>
-
-                <h3>Smart Signature</h3>
-
-                <span>Elegant smart technology designed with a premium appearance.</span>
-
-                <div class="product-bottom">
-
-                    <strong>$480</strong>
-
-                    <div class="product-buttons">
-
-                        <button class="view-btn" data-name="Smart Signature" data-price="480">View</button>
-
-                        <button class="add-to-cart" data-name="Smart Signature" data-price="480">
-                            Add to Cart
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
- 
-    <div class="cart-panel" id="cartPanel">
-
-        <div class="cart-header">
-
-            <h2>Your Cart</h2>
-
-            <button id="closeCart">
-                ×
             </button>
 
-        </div>
+            <button class="btn next" id="nextBtn">
+
+            </button>
 
 
-        <div class="cart-items" id="cartItems">
-
-            <p class="empty-cart">
-                Your cart is empty.
-            </p>
-
-        </div>
 
 
-        <div class="cart-footer">
+            <section class="products-section smart-section" id="smart-products">
 
-            <div class="cart-total">
+                <div class="section-heading">
 
-                <span>Total:</span>
+                    <p>SMART COLLECTION</p>
 
-                <strong id="cartTotal">
-                    $0.00
-                </strong>
+                    <h2>
+                        Intelligent <span>Style</span>
+                    </h2>
+
+                    <div class="heading-line"></div>
+
+                    <span>
+                        Modern technology designed around your lifestyle.
+                    </span>
+
+                </div>
+
+
+                <div class="product-grid">
+
+
+                    <!-- Smart 1 -->
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=800&q=85"
+                                alt="Smart Pro">
+
+                            <div class="badge smart-badge">Smart</div>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <p>Smart Series</p>
+
+                            <h3>Smart Pro</h3>
+
+                            <span>Modern smart design with useful everyday features.</span>
+
+                            <div class="product-bottom">
+
+                                <strong>$320</strong>
+
+                                <div class="product-buttons">
+
+                                    <button class="view-btn" data-name="Smart Pro" data-price="320">View</button>
+
+                                    <button class="add-to-cart" data-name="Smart Pro" data-price="320">
+                                        Add to Cart
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Smart 2 -->
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <img src="images (2).jpg" alt="Smart Elite">
+
+                            <div class="badge smart-badge">Smart</div>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <p>Elite Smart</p>
+
+                            <h3>Smart Elite</h3>
+
+                            <span>A clean modern design built for connected everyday life.</span>
+
+                            <div class="product-bottom">
+
+                                <strong>$390</strong>
+
+                                <div class="product-buttons">
+
+                                    <button class="view-btn" data-name="Smart Elite" data-price="390">View</button>
+
+                                    <button class="add-to-cart" data-name="Smart Elite" data-price="390">
+                                        Add to Cart
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Smart 3 -->
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <img src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=800&q=85"
+                                alt="Active Fit">
+
+                            <div class="badge smart-badge">Active</div>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <p>Active Series</p>
+
+                            <h3>Active Fit</h3>
+
+                            <span>A sporty smart watch designed for active daily routines.</span>
+
+                            <div class="product-bottom">
+
+                                <strong>$280</strong>
+
+                                <div class="product-buttons">
+
+                                    <button class="view-btn" data-name="Active Fit" data-price="280">View</button>
+
+                                    <button class="add-to-cart" data-name="Active Fit" data-price="280">
+                                        Add to Cart
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Smart 4 -->
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <img src="https://images.unsplash.com/photo-1551816230-ef5deaed4a26?auto=format&fit=crop&w=800&q=85"
+                                alt="Smart Classic">
+
+                            <div class="badge smart-badge">Classic</div>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <p>Classic Smart</p>
+
+                            <h3>Smart Classic</h3>
+
+                            <span>Classic watch aesthetics combined with modern smart features.</span>
+
+                            <div class="product-bottom">
+
+                                <strong>$350</strong>
+
+                                <div class="product-buttons">
+
+                                    <button class="view-btn" data-name="Smart Classic" data-price="350">View</button>
+
+                                    <button class="add-to-cart" data-name="Smart Classic" data-price="350">
+                                        Add to Cart
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Smart 5 -->
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <img src="https://images.unsplash.com/photo-1617043786394-f977fa12eddf?auto=format&fit=crop&w=800&q=85"
+                                alt="Connect X">
+
+                            <div class="badge smart-badge">Connect</div>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <p>Connect Series</p>
+
+                            <h3>Connect X</h3>
+
+                            <span>Stay connected with a sleek design made for everyday use.</span>
+
+                            <div class="product-bottom">
+
+                                <strong>$410</strong>
+
+                                <div class="product-buttons">
+
+                                    <button class="view-btn" data-name="Connect X" data-price="410">View</button>
+
+                                    <button class="add-to-cart" data-name="Connect X" data-price="410">
+                                        Add to Cart
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Smart 6 -->
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <img src="https://images.unsplash.com/photo-1510017803434-a899398421b3?auto=format&fit=crop&w=800&q=85"
+                                alt="Smart Edge">
+
+                            <div class="badge smart-badge">Modern</div>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <p>Modern Series</p>
+
+                            <h3>Smart Edge</h3>
+
+                            <span>Minimal modern styling with smart functionality.</span>
+
+                            <div class="product-bottom">
+
+                                <strong>$365</strong>
+
+                                <div class="product-buttons">
+
+                                    <button class="view-btn" data-name="Smart Edge" data-price="365">View</button>
+
+                                    <button class="add-to-cart" data-name="Smart Edge" data-price="365">
+                                        Add to Cart
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Smart 7 -->
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <img src="images (7).jpg" alt="Smart Max">
+
+                            <div class="badge smart-badge">Pro</div>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <p>Pro Series</p>
+
+                            <h3>Smart Max</h3>
+
+                            <span>A powerful smart design created for modern lifestyles.</span>
+
+                            <div class="product-bottom">
+
+                                <strong>$450</strong>
+
+                                <div class="product-buttons">
+
+                                    <button class="view-btn" data-name="Smart Max" data-price="450">View</button>
+
+                                    <button class="add-to-cart" data-name="Smart Max" data-price="450">
+                                        Add to Cart
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Smart 8 -->
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <img src="images (6).jpg" alt="Smart Signature">
+
+                            <div class="badge smart-badge">Signature</div>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <p>Signature Series</p>
+
+                            <h3>Smart Signature</h3>
+
+                            <span>Elegant smart technology designed with a premium appearance.</span>
+
+                            <div class="product-bottom">
+
+                                <strong>$480</strong>
+
+                                <div class="product-buttons">
+
+                                    <button class="view-btn" data-name="Smart Signature" data-price="480">View</button>
+
+                                    <button class="add-to-cart" data-name="Smart Signature" data-price="480">
+                                        Add to Cart
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <div class="cart-panel" id="cartPanel">
+
+                <div class="cart-header">
+
+                    <h2>Your Cart</h2>
+
+                    <button id="closeCart">
+                        ×
+                    </button>
+
+                </div>
+
+
+                <div class="cart-items" id="cartItems">
+
+                    <p class="empty-cart">
+                        Your cart is empty.
+                    </p>
+
+                </div>
+
+
+                <div class="cart-footer">
+
+                    <div class="cart-total">
+
+                        <span>Total:</span>
+
+                        <strong id="cartTotal">
+                            $0.00
+                        </strong>
+
+                    </div>
+
+                    <button class="checkout-btn" id="checkoutBtn">
+                        Checkout
+                    </button>
+
+                </div>
 
             </div>
 
-            <button class="checkout-btn" id="checkoutBtn">
-                Checkout
-            </button>
 
-        </div>
-
-    </div>
-
-
-    <!-- =====================================================
+            <!-- =====================================================
      FOOTER
 ===================================================== -->
 
-    <footer id="footer">
+            <footer id="footer">
 
-        <div class="footer-container">
+                <div class="footer-container">
 
-            <div class="footer-column">
+                    <div class="footer-column">
 
-                <h2>ALBERTO<span style="color: white;">CLOCKS</span></h2>
+                        <h2>ALBERTO<span style="color: white;">CLOCKS</span></h2>
 
-                <p>
-                    Timeless watches designed for those who
-                    appreciate elegance, craftsmanship and style.
-                </p>
+                        <p>
+                            Timeless watches designed for those who
+                            appreciate elegance, craftsmanship and style.
+                        </p>
 
-            </div>
-
-
-            <div class="footer-column">
-
-                <h3>Quick Links</h3>
-
-                <a href="index.html">Home</a>
-                <a href="luxary.html">Luxury Watches</a>
-                <a href="smart.html">Smart Watches</a>
-                <a href="vintage.html">Vintage Watches</a>
-
-            </div>
+                    </div>
 
 
-          <div class="footer-column">
+                    <div class="footer-column">
 
-                <h3>Contact</h3>
-                  <h3>📍 Address</h3>
+                        <h3>Quick Links</h3>
+
+                        <a href="index.html">Home</a>
+                        <a href="luxury.html">Luxury Watches</a>
+                        <a href="smart.html">Smart Watches</a>
+                        <a href="vintage.html">Vintage Watches</a>
+
+                    </div>
+
+
+                    <div class="footer-column">
+
+                        <h3>Contact</h3>
+                        <h3>📍 Address</h3>
                         <p>Karachi, Pakistan</p>
-                           <h3>📞Phone</h3>
+                        <h3>📞Phone</h3>
                         <p>+92 300 12345678</p>
                         <h3>📧Email</h3>
                         <p>support@albertoclocks.com</p>
                         <h3>⌚Working Hours</h3>
                         <p>Mon - Sat: 9:00 AM - 8:00 PM</p>
-                    
-
-            </div>
-
-        </div>
-         <div class="social-icons">
-
-    <a href="https://wa.me/923001234567" target="_blank">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
-
-    <a href="https://www.facebook.com/" target="_blank">
-        <i class="fa-brands fa-facebook"></i>
-    </a>
-
-    <a href="https://www.instagram.com/" target="_blank">
-        <i class="fa-brands fa-instagram"></i>
-    </a>
-
-</div>
-
-        <div class="footer-bottom">
-
-            <p>
-                © 2026 ALBERTOCLOCKS. All Rights Reserved.
-            </p>
-
-        </div>
-        <div>
 
 
-<script src="script.js"></script>
-</body>
+                    </div>
+
+                </div>
+                <div class="social-icons">
+
+                    <a href="https://wa.me/923001234567" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                </div>
+
+                <div class="footer-bottom">
+
+                    <p>
+                        © 2026 ALBERTOCLOCKS. All Rights Reserved.
+                    </p>
+
+                </div>
+                <div>
+
+
+                    <script src="script.js"></script>
+    </body>
+
 </html>

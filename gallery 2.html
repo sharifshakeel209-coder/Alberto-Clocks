@@ -6,43 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <style>
         body {
-    font-family: "Montserrat", sans-serif;
-    background: #0a0a0a;
-    color: #ffffff;
-    overflow-x: hidden;
+            font-family: "Montserrat", sans-serif;
+            background: #0a0a0a;
+            color: #ffffff;
+            overflow-x: hidden;
         }
-
     </style>
 </head>
 
 <body>
-  <header class="navbar">
+    <header class="navbar">
 
-    <a href="#home" class="logo">
-        ALBERTO<span style="color: white;">CLOCKS</span>
-    </a>
+        <a href="#home" class="logo">
+            ALBERTO<span style="color: white;">CLOCKS</span>
+        </a>
 
-    <nav class="nav-links">
+        <nav class="nav-links">
             <a href="index.html">Home</a>
-                <li class="dropdown">
-         <a href="#">Categories ▾</a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="toggleDropdown()">
+                    CATEGORIES <span>▼</span>
+                </button>
 
-    <ul class="dropdown-menu">
-        <li><a href="luxary.html">Luxury Watches</a></li>
-        <li><a href="smart.html">Smart Watches</a></li>
-        <li><a href="vintage.html">Vintage Watches</a></li>
-    </ul>
-</li>
+                <div class="dropdown-content" id="categoryDropdown">
+                    <a href="luxury.html">LUXURY</a>
+                    <a href="vintage.html">VINTAGE</a>
+                    <a href="smart.html">SMART WATCHES</a>
+                </div>
+            </div>
             <a href="gallery 2.html">Gallery</a>
             <a href="contact-us.html">Contact</a>
             <a href="aboutus.html">Aboutus</a>
-          
-          
-    </nav>
-   <div class="nav-right">
+
+
+        </nav>
+        <div class="nav-right">
 
             <div class="search-box">
                 <input type="text" id="searchInput" placeholder="Search watches...">
@@ -59,15 +60,15 @@
         </button>
 
     </header>
-<div>
+    <div>
         <button class="btn prev" id="prevBtn">
-        
+
         </button>
 
         <button class="btn next" id="nextBtn">
-        
+
         </button>
-</div>
+    </div>
 
     <section class="gallery">
         <div id="popup" class="popup">
@@ -97,7 +98,7 @@
             <img src="vintage6.jpeg" onclick="openPopup(this.src)">
             <img src="vintage7.jpeg" onclick="openPopup(this.src)">
             <img src="vintage8.jpeg" onclick="openPopup(this.src)">
-              <img src="vintage9.jpeg" onclick="openPopup(this.src)">
+            <img src="vintage9.jpeg" onclick="openPopup(this.src)">
         </div>
 
 
@@ -224,45 +225,45 @@
                 <h3>Quick Links</h3>
 
                 <a href="index.html">Home</a>
-                <a href="luxary.html">Luxury Watches</a>
+                <a href="luxury.html">Luxury Watches</a>
                 <a href="smart.html">Smart Watches</a>
                 <a href="vintage.html">Vintage Watches</a>
 
             </div>
 
 
-             <div class="footer-column">
+            <div class="footer-column">
 
                 <h3>Contact</h3>
-                  <h3>📍 Address</h3>
-                        <p>Karachi, Pakistan</p>
-                           <h3>📞Phone</h3>
-                        <p>+92 300 12345678</p>
-                        <h3>📧Email</h3>
-                        <p>support@albertoclocks.com</p>
-                        <h3>⌚Working Hours</h3>
-                        <p>Mon - Sat: 9:00 AM - 8:00 PM</p>
-                    
+                <h3>📍 Address</h3>
+                <p>Karachi, Pakistan</p>
+                <h3>📞Phone</h3>
+                <p>+92 300 12345678</p>
+                <h3>📧Email</h3>
+                <p>support@albertoclocks.com</p>
+                <h3>⌚Working Hours</h3>
+                <p>Mon - Sat: 9:00 AM - 8:00 PM</p>
+
 
             </div>
 
         </div>
 
-            <div class="social-icons">
+        <div class="social-icons">
 
-    <a href="https://wa.me/923001234567" target="_blank">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
+            <a href="https://wa.me/923001234567" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
 
-    <a href="https://www.facebook.com/" target="_blank">
-        <i class="fa-brands fa-facebook"></i>
-    </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
 
-    <a href="https://www.instagram.com/" target="_blank">
-        <i class="fa-brands fa-instagram"></i>
-    </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
 
-</div>
+        </div>
         <div class="footer-bottom">
 
             <p>
@@ -274,6 +275,7 @@
 
 
 
-<script src="script.js"></script></body>
+            <script src="script.js"></script>
+</body>
 
 </html>

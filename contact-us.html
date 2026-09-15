@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Contact Form</title>
     <link rel="stylesheet" href="style.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <style>
         * {
@@ -15,22 +16,22 @@
 
         body {
             font-family: Arial, sans-serif;
-            background-color:rgb(0, 0, 0);
+            background-color: rgb(0, 0, 0);
             margin: 0;
             padding: 40px;
         }
 
         .form-container {
-    height: 650px;
-    width: 100%;
-    border-radius: 18px;
-    overflow: hidden;
+            height: 650px;
+            width: 100%;
+            border-radius: 18px;
+            overflow: hidden;
 
-    position: relative;
+            position: relative;
 
-   
-    background-size: cover;
-    background-position: center;
+
+            background-size: cover;
+            background-position: center;
             max-width: 500px;
             margin: auto;
             background: url(186.jpg);
@@ -55,7 +56,7 @@
             display: block;
             margin-bottom: 7px;
             font-weight: bold;
-    
+
         }
 
         input,
@@ -92,7 +93,7 @@
             padding: 12px;
             border: none;
             border-radius: 5px;
-            background-color:black;
+            background-color: black;
             color: #d5ad62;
             font-size: 16px;
             cursor: pointer;
@@ -108,7 +109,7 @@
 </head>
 
 <body>
-      <header class="navbar">
+    <header class="navbar">
 
         <a href="#home" class="logo">
             ALBERTO<span style="color: white;">CLOCKS</span>
@@ -116,23 +117,25 @@
 
         <nav class="nav-links">
             <a href="index.html">Home</a>
-            <li class="dropdown">
-         <a href="#">Categories ▾</a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="toggleDropdown()">
+                    CATEGORIES <span>▼</span>
+                </button>
 
-    <ul class="dropdown-menu">
-        <li><a href="luxary.html">Luxury Watches</a></li>
-        <li><a href="smart.html">Smart Watches</a></li>
-        <li><a href="vintage.html">Vintage Watches</a></li>
-    </ul>
-</li>
-           
+                <div class="dropdown-content" id="categoryDropdown">
+                    <a href="luxury.html">LUXURY</a>
+                    <a href="vintage.html">VINTAGE</a>
+                    <a href="smart.html">SMART WATCHES</a>
+                </div>
+            </div>
+
             <a href="gallery 2.html">Gallery</a>
             <a href="contact-us.html">Contact</a>
             <a href="aboutus.html">Aboutus</a>
-      
+
         </nav>
 
-         <div class="nav-right">
+        <div class="nav-right">
 
             <div class="search-box">
                 <input type="text" id="searchInput" placeholder="Search watches...">
@@ -151,122 +154,101 @@
         </button>
 
     </header>
-     
-
-  
 
 
 
-<div>
+
+
+
+    <div>
         <button class="btn prev" id="prevBtn">
-        
+
         </button>
 
         <button class="btn next" id="nextBtn">
-        
+
         </button>
-</div>
+    </div>
     </header>
 
-      <section class="contact-section">
+    <section class="contact-section">
 
         <!-- LEFT SIDE MAP -->
         <div class="map-box">
 
             <h2>Find Us</h2>
 
-            <iframe
-                src="https://www.google.com/maps?q=LuckyOne%20Mall%20Karachi&output=embed"
-                loading="lazy"
+            <iframe src="https://www.google.com/maps?q=LuckyOne%20Mall%20Karachi&output=embed" loading="lazy"
                 allowfullscreen>
             </iframe>
 
         </div>
 
-    <div class="form-container">
+        <div class="form-container">
 
-        <h2>Contact Us</h2>
+            <h2>Contact Us</h2>
 
-        <form id="contactForm">
+            <form id="contactForm">
 
-            <!-- Name -->
-            <div class="form-group">
-                <label for="name"></label>
+                <!-- Name -->
+                <div class="form-group">
+                    <label for="name"></label>
 
-                <input 
-                    type="text" 
-                    id="name" 
-                    placeholder="Enter your name"
-                >
+                    <input type="text" id="name" placeholder="Enter your name">
 
-                <span class="error" id="nameError"></span>
-            </div>
+                    <span class="error" id="nameError"></span>
+                </div>
 
 
-            <!-- Email -->
-            <div class="form-group">
-                <label for="email"></label>
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email"></label>
 
-                <input 
-                    type="text" 
-                    id="email" 
-                    placeholder="Enter your email"
-                >
+                    <input type="text" id="email" placeholder="Enter your email">
 
-                <span class="error" id="emailError"></span>
-            </div>
+                    <span class="error" id="emailError"></span>
+                </div>
 
 
-            <!-- Phone -->
-            <div class="form-group">
-                <label for="phone"></label>
+                <!-- Phone -->
+                <div class="form-group">
+                    <label for="phone"></label>
 
-                <input 
-                    type="text" 
-                    id="phone" 
-                    placeholder="03001234567"
-                >
+                    <input type="text" id="phone" placeholder="03001234567">
 
-                <span class="error" id="phoneError"></span>
-            </div>
+                    <span class="error" id="phoneError"></span>
+                </div>
 
 
-            <!-- Subject -->
-            <div class="form-group">
-                <label for="subject"></label>
+                <!-- Subject -->
+                <div class="form-group">
+                    <label for="subject"></label>
 
-                <input 
-                    type="text" 
-                    id="subject" 
-                    placeholder="Enter subject"
-                >
+                    <input type="text" id="subject" placeholder="Enter subject">
 
-                <span class="error" id="subjectError"></span>
-            </div>
+                    <span class="error" id="subjectError"></span>
+                </div>
 
 
-            <!-- Message -->
-            <div class="form-group">
-                <label for="message"></label>
+                <!-- Message -->
+                <div class="form-group">
+                    <label for="message"></label>
 
-                <textarea 
-                    id="message" 
-                    placeholder="Write your message"
-                ></textarea>
+                    <textarea id="message" placeholder="Write your message"></textarea>
 
-                <span class="error" id="messageError"></span>
-            </div>
+                    <span class="error" id="messageError"></span>
+                </div>
 
 
-            <button type="submit">
-                Submit
-            </button>
+                <button type="submit">
+                    Submit
+                </button>
 
-            <div class="success" id="successMessage"></div>
+                <div class="success" id="successMessage"></div>
 
-        </form>
+            </form>
 
-    
+
 
     </section>
 
@@ -276,7 +258,7 @@
         const form = document.getElementById("contactForm");
 
 
-        form.addEventListener("submit", function(event) {
+        form.addEventListener("submit", function (event) {
 
             event.preventDefault();
 
@@ -321,13 +303,13 @@
                 nameError.textContent = "Name is required.";
                 isValid = false;
 
-            } 
+            }
             else if (name.length < 3) {
 
                 nameError.textContent = "Name must be at least 3 characters.";
                 isValid = false;
 
-            } 
+            }
             else if (!namePattern.test(name)) {
 
                 nameError.textContent = "Name can contain only letters.";
@@ -347,7 +329,7 @@
                 emailError.textContent = "Email is required.";
                 isValid = false;
 
-            } 
+            }
             else if (!emailPattern.test(email)) {
 
                 emailError.textContent = "Please enter a valid email.";
@@ -367,7 +349,7 @@
                 phoneError.textContent = "Phone number is required.";
                 isValid = false;
 
-            } 
+            }
             else if (!phonePattern.test(phone)) {
 
                 phoneError.textContent =
@@ -387,7 +369,7 @@
                 subjectError.textContent = "Subject is required.";
                 isValid = false;
 
-            } 
+            }
             else if (subject.length < 5) {
 
                 subjectError.textContent =
@@ -407,7 +389,7 @@
                 messageError.textContent = "Message is required.";
                 isValid = false;
 
-            } 
+            }
             else if (message.length < 10) {
 
                 messageError.textContent =
@@ -434,7 +416,7 @@
         });
 
     </script>
-      <div class="cart-panel" id="cartPanel">
+    <div class="cart-panel" id="cartPanel">
 
         <div class="cart-header">
 
@@ -502,7 +484,7 @@
                 <h3>Quick Links</h3>
 
                 <a href="index.html">Home</a>
-                <a href="luxary.html">Luxury Watches</a>
+                <a href="luxury.html">Luxury Watches</a>
                 <a href="smart.html">Smart Watches</a>
                 <a href="vintage.html">Vintage Watches</a>
 
@@ -512,35 +494,35 @@
             <div class="footer-column">
 
                 <h3>Contact</h3>
-                  <h3>📍 Address</h3>
-                        <p>Karachi, Pakistan</p>
-                           <h3>📞Phone</h3>
-                        <p>+92 300 12345678</p>
-                        <h3>📧Email</h3>
-                        <p>support@albertoclocks.com</p>
-                        <h3>⌚Working Hours</h3>
-                        <p>Mon - Sat: 9:00 AM - 8:00 PM</p>
-                    
+                <h3>📍 Address</h3>
+                <p>Karachi, Pakistan</p>
+                <h3>📞Phone</h3>
+                <p>+92 300 12345678</p>
+                <h3>📧Email</h3>
+                <p>support@albertoclocks.com</p>
+                <h3>⌚Working Hours</h3>
+                <p>Mon - Sat: 9:00 AM - 8:00 PM</p>
+
 
             </div>
 
         </div>
 
-  <div class="social-icons">
+        <div class="social-icons">
 
-    <a href="https://wa.me/923001234567" target="_blank">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
+            <a href="https://wa.me/923001234567" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
 
-    <a href="https://www.facebook.com/" target="_blank">
-        <i class="fa-brands fa-facebook"></i>
-    </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
 
-    <a href="https://www.instagram.com/" target="_blank">
-        <i class="fa-brands fa-instagram"></i>
-    </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
 
-</div>
+        </div>
         <div class="footer-bottom">
 
             <p>
@@ -552,10 +534,8 @@
 
 
 
-    <script src="script.js"></script>
+            <script src="script.js"></script>
 
 </body>
+
 </html>
-
-
-

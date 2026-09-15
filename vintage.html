@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
     <header class="navbar">
 
-    <a href="#home" class="logo">
-        ALBERTO<span style="color: white;">CLOCKS</span>
-    </a>
+        <a href="#home" class="logo">
+            ALBERTO<span style="color: white;">CLOCKS</span>
+        </a>
 
-    <nav class="nav-links">
+        <nav class="nav-links">
             <a href="index.html">Home</a>
-                <li class="dropdown">
-         <a href="#">Categories ▾</a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="toggleDropdown()">
+                    CATEGORIES <span>▼</span>
+                </button>
 
-    <ul class="dropdown-menu">
-        <li><a href="luxary.html">Luxury Watches</a></li>
-        <li><a href="smart.html">Smart Watches</a></li>
-        <li><a href="vintage.html">Vintage Watches</a></li>
-    </ul>
-</li>
+                <div class="dropdown-content" id="categoryDropdown">
+                    <a href="luxury.html">LUXURY</a>
+                    <a href="vintage.html">VINTAGE</a>
+                    <a href="smart.html">SMART WATCHES</a>
+                </div>
+            </div>
             <a href="gallery 2.html">Gallery</a>
             <a href="contact-us.html">Contact</a>
             <a href="aboutus.html">Aboutus</a>
-           
-          
-    </nav>
-   
-      <div class="nav-right">
+
+
+        </nav>
+
+        <div class="nav-right">
 
             <div class="search-box">
                 <input type="text" id="searchInput" placeholder="Search watches...">
@@ -54,68 +58,357 @@
 
 
 
-<div>
+    <div>
         <button class="btn prev" id="prevBtn">
-        
+
         </button>
 
         <button class="btn next" id="nextBtn">
-        
+
         </button>
-</div>
+    </div>
 
     <section class="products-section vintage-section" id="vintage-products">
 
-    <div class="section-heading">
+        <div class="section-heading">
 
-        <p>VINTAGE COLLECTION</p>
+            <p>VINTAGE COLLECTION</p>
 
-        <h2>
-            Classic <span>Heritage</span>
-        </h2>
+            <h2>
+                Classic <span>Heritage</span>
+            </h2>
 
-        <div class="heading-line"></div>
+            <div class="heading-line"></div>
 
-        <span>
-            Timeless watches inspired by the beauty of the past.
-        </span>
+            <span>
+                Timeless watches inspired by the beauty of the past.
+            </span>
 
-    </div>
-
-
-    <div class="product-grid">
+        </div>
 
 
-        <!-- Vintage 1 -->
-        <div class="product-card">
+        <div class="product-grid">
 
-            <div class="product-image">
 
-                <img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=85" alt="Golden Heritage">
+            <!-- Vintage 1 -->
+            <div class="product-card">
 
-                <div class="badge">Classic</div>
+                <div class="product-image">
+
+                    <img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=85"
+                        alt="Golden Heritage">
+
+                    <div class="badge">Classic</div>
+
+                </div>
+
+                <div class="product-info">
+
+                    <p>Heritage Series</p>
+
+                    <h3>Golden Heritage</h3>
+
+                    <span>A classic gold-tone timepiece inspired by traditional watchmaking.</span>
+
+                    <div class="product-bottom">
+
+                        <strong>$420</strong>
+
+                        <div class="product-buttons">
+
+                            <button class="view-btn" data-name="Golden Heritage" data-price="420">View</button>
+
+                            <button class="add-to-cart" data-name="Golden Heritage" data-price="420">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
 
             </div>
 
-            <div class="product-info">
 
-                <p>Heritage Series</p>
+            <!-- Vintage 2 -->
+            <div class="product-card">
 
-                <h3>Golden Heritage</h3>
+                <div class="product-image">
 
-                <span>A classic gold-tone timepiece inspired by traditional watchmaking.</span>
+                    <img src="https://images.unsplash.com/photo-1508057198894-247b23fe5ade?auto=format&fit=crop&w=800&q=85"
+                        alt="Old Town">
 
-                <div class="product-bottom">
+                    <div class="badge">Vintage</div>
 
-                    <strong>$420</strong>
+                </div>
 
-                    <div class="product-buttons">
+                <div class="product-info">
 
-                        <button class="view-btn" data-name="Golden Heritage" data-price="420">View</button>
+                    <p>Classic Collection</p>
 
-                        <button class="add-to-cart" data-name="Golden Heritage" data-price="420">
-                            Add to Cart
-                        </button>
+                    <h3>Old Town</h3>
+
+                    <span>Elegant leather styling with a timeless vintage-inspired dial.</span>
+
+                    <div class="product-bottom">
+
+                        <strong>$380</strong>
+
+                        <div class="product-buttons">
+
+                            <button class="view-btn" data-name="Old Town" data-price="380">View</button>
+
+                            <button class="add-to-cart" data-name="Old Town" data-price="380">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Vintage 3 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=800&q=85"
+                        alt="Royal Classic">
+
+                    <div class="badge">Classic</div>
+
+                </div>
+
+                <div class="product-info">
+
+                    <p>Timeless Series</p>
+
+                    <h3>Royal Classic</h3>
+
+                    <span>Refined details and traditional design for a sophisticated look.</span>
+
+                    <div class="product-bottom">
+
+                        <strong>$450</strong>
+
+                        <div class="product-buttons">
+
+                            <button class="view-btn" data-name="Royal Classic" data-price="450">View</button>
+
+                            <button class="add-to-cart" data-name="Royal Classic" data-price="450">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Vintage 4 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="https://images.unsplash.com/photo-1495857000853-fe46c8aefc30?auto=format&fit=crop&w=800&q=85"
+                        alt="Heritage Steel">
+
+                    <div class="badge">Heritage</div>
+
+                </div>
+
+                <div class="product-info">
+
+                    <p>Mechanical Series</p>
+
+                    <h3>Heritage Steel</h3>
+
+                    <span>A vintage-inspired steel case combined with a clean traditional dial.</span>
+
+                    <div class="product-bottom">
+
+                        <strong>$520</strong>
+
+                        <div class="product-buttons">
+
+                            <button class="view-btn" data-name="Heritage Steel" data-price="520">View</button>
+
+                            <button class="add-to-cart" data-name="Heritage Steel" data-price="520">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Vintage 5 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="https://images.unsplash.com/photo-1434056886845-dac89ffe9b56?auto=format&fit=crop&w=800&q=85"
+                        alt="Antique Gold">
+
+                    <div class="badge">Luxury</div>
+
+                </div>
+
+                <div class="product-info">
+
+                    <p>Luxury Heritage</p>
+
+                    <h3>Antique Gold</h3>
+
+                    <span>Warm gold tones and a classic profile inspired by vintage luxury watches.</span>
+
+                    <div class="product-bottom">
+
+                        <strong>$610</strong>
+
+                        <div class="product-buttons">
+
+                            <button class="view-btn" data-name="Antique Gold" data-price="610">View</button>
+
+                            <button class="add-to-cart" data-name="Antique Gold" data-price="610">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Vintage 6 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="https://images.unsplash.com/photo-1526045431048-f857369baa09?auto=format&fit=crop&w=800&q=85"
+                        alt="Brown Classic">
+
+                    <div class="badge">Leather</div>
+
+                </div>
+
+                <div class="product-info">
+
+                    <p>Leather Collection</p>
+
+                    <h3>Brown Classic</h3>
+
+                    <span>Rich leather styling paired with a simple and elegant vintage dial.</span>
+
+                    <div class="product-bottom">
+
+                        <strong>$340</strong>
+
+                        <div class="product-buttons">
+
+                            <button class="view-btn" data-name="Brown Classic" data-price="340">View</button>
+
+                            <button class="add-to-cart" data-name="Brown Classic" data-price="340">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Vintage 7 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="mens-midnight-blue-retro-watch-festina.webp" alt="Midnight Retro">
+
+                    <div class="badge">Retro</div>
+
+                </div>
+
+                <div class="product-info">
+
+                    <p>Retro Series</p>
+
+                    <h3>Midnight Retro</h3>
+
+                    <span>A dark vintage design that combines classic character with modern elegance.</span>
+
+                    <div class="product-bottom">
+
+                        <strong>$395</strong>
+
+                        <div class="product-buttons">
+
+                            <button class="view-btn" data-name="Midnight Retro" data-price="395">View</button>
+
+                            <button class="add-to-cart" data-name="Midnight Retro" data-price="395">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Vintage 8 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&w=800&q=85"
+                        alt="Timeless Gold">
+
+                    <div class="badge">Limited</div>
+
+                </div>
+
+                <div class="product-info">
+
+                    <p>Collector Series</p>
+
+                    <h3>Timeless Gold</h3>
+
+                    <span>A sophisticated vintage-inspired watch made for classic style lovers.</span>
+
+                    <div class="product-bottom">
+
+                        <strong>$680</strong>
+
+                        <div class="product-buttons">
+
+                            <button class="view-btn" data-name="Timeless Gold" data-price="680">View</button>
+
+                            <button class="add-to-cart" data-name="Timeless Gold" data-price="680">
+                                Add to Cart
+                            </button>
+
+                        </div>
 
                     </div>
 
@@ -125,289 +418,7 @@
 
         </div>
 
-
-        <!-- Vintage 2 -->
-        <div class="product-card">
-
-            <div class="product-image">
-
-                <img src="https://images.unsplash.com/photo-1508057198894-247b23fe5ade?auto=format&fit=crop&w=800&q=85" alt="Old Town">
-
-                <div class="badge">Vintage</div>
-
-            </div>
-
-            <div class="product-info">
-
-                <p>Classic Collection</p>
-
-                <h3>Old Town</h3>
-
-                <span>Elegant leather styling with a timeless vintage-inspired dial.</span>
-
-                <div class="product-bottom">
-
-                    <strong>$380</strong>
-
-                    <div class="product-buttons">
-
-                        <button class="view-btn" data-name="Old Town" data-price="380">View</button>
-
-                        <button class="add-to-cart" data-name="Old Town" data-price="380">
-                            Add to Cart
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- Vintage 3 -->
-        <div class="product-card">
-
-            <div class="product-image">
-
-                <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=800&q=85" alt="Royal Classic">
-
-                <div class="badge">Classic</div>
-
-            </div>
-
-            <div class="product-info">
-
-                <p>Timeless Series</p>
-
-                <h3>Royal Classic</h3>
-
-                <span>Refined details and traditional design for a sophisticated look.</span>
-
-                <div class="product-bottom">
-
-                    <strong>$450</strong>
-
-                    <div class="product-buttons">
-
-                        <button class="view-btn" data-name="Royal Classic" data-price="450">View</button>
-
-                        <button class="add-to-cart" data-name="Royal Classic" data-price="450">
-                            Add to Cart
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- Vintage 4 -->
-        <div class="product-card">
-
-            <div class="product-image">
-
-                <img src="https://images.unsplash.com/photo-1495857000853-fe46c8aefc30?auto=format&fit=crop&w=800&q=85" alt="Heritage Steel">
-
-                <div class="badge">Heritage</div>
-
-            </div>
-
-            <div class="product-info">
-
-                <p>Mechanical Series</p>
-
-                <h3>Heritage Steel</h3>
-
-                <span>A vintage-inspired steel case combined with a clean traditional dial.</span>
-
-                <div class="product-bottom">
-
-                    <strong>$520</strong>
-
-                    <div class="product-buttons">
-
-                        <button class="view-btn" data-name="Heritage Steel" data-price="520">View</button>
-
-                        <button class="add-to-cart" data-name="Heritage Steel" data-price="520">
-                            Add to Cart
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- Vintage 5 -->
-        <div class="product-card">
-
-            <div class="product-image">
-
-                <img src="https://images.unsplash.com/photo-1434056886845-dac89ffe9b56?auto=format&fit=crop&w=800&q=85" alt="Antique Gold">
-
-                <div class="badge">Luxury</div>
-
-            </div>
-
-            <div class="product-info">
-
-                <p>Luxury Heritage</p>
-
-                <h3>Antique Gold</h3>
-
-                <span>Warm gold tones and a classic profile inspired by vintage luxury watches.</span>
-
-                <div class="product-bottom">
-
-                    <strong>$610</strong>
-
-                    <div class="product-buttons">
-
-                        <button class="view-btn" data-name="Antique Gold" data-price="610">View</button>
-
-                        <button class="add-to-cart" data-name="Antique Gold" data-price="610">
-                            Add to Cart
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- Vintage 6 -->
-        <div class="product-card">
-
-            <div class="product-image">
-
-                <img src="https://images.unsplash.com/photo-1526045431048-f857369baa09?auto=format&fit=crop&w=800&q=85" alt="Brown Classic">
-
-                <div class="badge">Leather</div>
-
-            </div>
-
-            <div class="product-info">
-
-                <p>Leather Collection</p>
-
-                <h3>Brown Classic</h3>
-
-                <span>Rich leather styling paired with a simple and elegant vintage dial.</span>
-
-                <div class="product-bottom">
-
-                    <strong>$340</strong>
-
-                    <div class="product-buttons">
-
-                        <button class="view-btn" data-name="Brown Classic" data-price="340">View</button>
-
-                        <button class="add-to-cart" data-name="Brown Classic" data-price="340">
-                            Add to Cart
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- Vintage 7 -->
-        <div class="product-card">
-
-            <div class="product-image">
-
-                <img src="mens-midnight-blue-retro-watch-festina.webp" alt="Midnight Retro">
-
-                <div class="badge">Retro</div>
-
-            </div>
-
-            <div class="product-info">
-
-                <p>Retro Series</p>
-
-                <h3>Midnight Retro</h3>
-
-                <span>A dark vintage design that combines classic character with modern elegance.</span>
-
-                <div class="product-bottom">
-
-                    <strong>$395</strong>
-
-                    <div class="product-buttons">
-
-                        <button class="view-btn" data-name="Midnight Retro" data-price="395">View</button>
-
-                        <button class="add-to-cart" data-name="Midnight Retro" data-price="395">
-                            Add to Cart
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- Vintage 8 -->
-        <div class="product-card">
-
-            <div class="product-image">
-
-                <img src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&w=800&q=85" alt="Timeless Gold">
-
-                <div class="badge">Limited</div>
-
-            </div>
-
-            <div class="product-info">
-
-                <p>Collector Series</p>
-
-                <h3>Timeless Gold</h3>
-
-                <span>A sophisticated vintage-inspired watch made for classic style lovers.</span>
-
-                <div class="product-bottom">
-
-                    <strong>$680</strong>
-
-                    <div class="product-buttons">
-
-                        <button class="view-btn" data-name="Timeless Gold" data-price="680">View</button>
-
-                        <button class="add-to-cart" data-name="Timeless Gold" data-price="680">
-                            Add to Cart
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
+    </section>
     <div class="cart-panel" id="cartPanel">
 
         <div class="cart-header">
@@ -476,44 +487,44 @@
                 <h3>Quick Links</h3>
 
                 <a href="index.html">Home</a>
-                <a href="luxary.html">Luxury Watches</a>
+                <a href="luxury.html">Luxury Watches</a>
                 <a href="smart.html">Smart Watches</a>
                 <a href="vintage.html">Vintage Watches</a>
 
             </div>
 
- <div class="footer-column">
+            <div class="footer-column">
 
                 <h3>Contact</h3>
-                  <h3>📍 Address</h3>
-                        <p>Karachi, Pakistan</p>
-                           <h3>📞Phone</h3>
-                        <p>+92 300 12345678</p>
-                        <h3>📧Email</h3>
-                        <p>support@albertoclocks.com</p>
-                        <h3>⌚Working Hours</h3>
-                        <p>Mon - Sat: 9:00 AM - 8:00 PM</p>
-                    
+                <h3>📍 Address</h3>
+                <p>Karachi, Pakistan</p>
+                <h3>📞Phone</h3>
+                <p>+92 300 12345678</p>
+                <h3>📧Email</h3>
+                <p>support@albertoclocks.com</p>
+                <h3>⌚Working Hours</h3>
+                <p>Mon - Sat: 9:00 AM - 8:00 PM</p>
+
 
             </div>
 
         </div>
 
-           <div class="social-icons">
+        <div class="social-icons">
 
-    <a href="https://wa.me/923001234567" target="_blank">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
+            <a href="https://wa.me/923001234567" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
 
-    <a href="https://www.facebook.com/" target="_blank">
-        <i class="fa-brands fa-facebook"></i>
-    </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
 
-    <a href="https://www.instagram.com/" target="_blank">
-        <i class="fa-brands fa-instagram"></i>
-    </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
 
-</div>
+        </div>
         <div class="footer-bottom">
 
             <p>
@@ -524,8 +535,9 @@
         <div>
 
 
-<script src="script.js"></script>
+            <script src="script.js"></script>
 
 
 </body>
+
 </html>

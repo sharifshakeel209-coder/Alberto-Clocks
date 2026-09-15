@@ -16,8 +16,7 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
@@ -34,20 +33,22 @@
 
         <nav class="nav-links">
             <a href="index.html">Home</a>
-            <li class="dropdown">
-         <a href="#">Categories ▾</a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="toggleDropdown()">
+                    CATEGORIES <span>▼</span>
+                </button>
 
-    <ul class="dropdown-menu">
-        <li><a href="luxary.html">Luxury Watches</a></li>
-        <li><a href="smart.html">Smart Watches</a></li>
-        <li><a href="vintage.html">Vintage Watches</a></li>
-    </ul>
-</li>
-           
+                <div class="dropdown-content" id="categoryDropdown">
+                    <a href="luxury.html">LUXURY</a>
+                    <a href="vintage.html">VINTAGE</a>
+                    <a href="smart.html">SMART WATCHES</a>
+                </div>
+            </div>
+
             <a href="gallery 2.html">Gallery</a>
             <a href="contact-us.html">Contact</a>
             <a href="aboutus.html">Aboutus</a>
-         
+
         </nav>
 
         <div class="nav-right">
@@ -248,7 +249,7 @@
     </section>
 
 
-   
+
 
 
     <!-- =====================================================
@@ -304,7 +305,7 @@
     </section>
 
 
-   
+
 
     <!-- =====================================================
      VINTAGE SHOWCASE
@@ -360,162 +361,162 @@
 
     </section>
 
-<section class="watch-list">
+    <section class="watch-list">
 
-   <div class="logo2">
-    <span>OUR WATCH</span>COLLECTION
-</div>
-
-    <div class="watch-grid">
-
-        <div class="watch-card">
-            <h3>Luxury Classic</h3>
-            <p>Elegant stainless steel watch with a premium black dial and sophisticated design.</p>
-            <strong>$299</strong>
+        <div class="logo2">
+            <span>OUR WATCH</span>COLLECTION
         </div>
 
-        <div class="watch-card">
-            <h3>Royal Gold</h3>
-            <p>Luxury gold-tone watch with a detailed dial and premium bracelet for a royal look.</p>
-            <strong>$399</strong>
+        <div class="watch-grid">
+
+            <div class="watch-card">
+                <h3>Luxury Classic</h3>
+                <p>Elegant stainless steel watch with a premium black dial and sophisticated design.</p>
+                <strong>$299</strong>
+            </div>
+
+            <div class="watch-card">
+                <h3>Royal Gold</h3>
+                <p>Luxury gold-tone watch with a detailed dial and premium bracelet for a royal look.</p>
+                <strong>$399</strong>
+            </div>
+
+            <div class="watch-card">
+                <h3>Executive Black</h3>
+                <p>Modern black watch with a clean dial and durable design for professional use.</p>
+                <strong>$249</strong>
+            </div>
+
+            <div class="watch-card">
+                <h3>Silver Prestige</h3>
+                <p>Classic silver watch with polished finishing and reliable movement.</p>
+                <strong>$279</strong>
+            </div>
+
+            <div class="watch-card">
+                <h3>Golden Heritage</h3>
+                <p>Vintage-inspired gold watch with a traditional dial and elegant bracelet.</p>
+                <strong>$449</strong>
+            </div>
+
+            <div class="watch-card">
+                <h3>Modern Chronograph</h3>
+                <p>Sporty chronograph watch with multiple sub-dials and premium construction.</p>
+                <strong>$329</strong>
+            </div>
+
+            <div class="watch-card">
+                <h3>Ocean Blue</h3>
+                <p>Stylish blue-dial watch with stainless steel case and modern appearance.</p>
+                <strong>$259</strong>
+            </div>
+
+            <div class="watch-card">
+                <h3>Midnight Steel</h3>
+                <p>Dark stainless steel watch with a minimalist dial and bold contemporary style.</p>
+                <strong>$319</strong>
+            </div>
+
+            <div class="watch-card">
+                <h3>Vintage Leather</h3>
+                <p>Classic vintage watch with a premium leather strap and timeless design.</p>
+                <strong>$229</strong>
+            </div>
+
+            <div class="watch-card">
+                <h3>Diamond Elite</h3>
+                <p>Premium luxury watch with elegant detailing and sparkling decorative accents.</p>
+                <strong>$599</strong>
+            </div>
+
+            <div class="watch-card">
+                <h3>Urban Smart</h3>
+                <p>Modern smartwatch-inspired design with a clean display and lightweight body.</p>
+                <strong>$199</strong>
+            </div>
+
+            <div class="watch-card">
+                <h3>Classic Brown</h3>
+                <p>Elegant brown leather watch with a detailed dial and polished case.</p>
+                <strong>$239</strong>
+            </div>
+
+            <div class="watch-card">
+                <h3>Titanium Pro</h3>
+                <p>Lightweight sporty watch with modern styling and a durable construction.</p>
+                <strong>$379</strong>
+            </div>
+
+            <div class="watch-card">
+                <h3>Royal Blue Chronograph</h3>
+                <p>Bold blue chronograph with detailed sub-dials and metallic finishing.</p>
+                <strong>$359</strong>
+            </div>
+
+            <div class="watch-card">
+                <h3>Classic White</h3>
+                <p>Minimal white dial with elegant markers and a refined premium case.</p>
+                <strong>$219</strong>
+            </div>
+
+            <div class="watch-card">
+                <h3>Black Luxury</h3>
+                <p>Premium all-black watch with bold details and a powerful luxury appearance.</p>
+                <strong>$429</strong>
+            </div>
+
+            <div class="watch-card">
+                <h3>Heritage Automatic</h3>
+                <p>Traditional automatic-inspired watch with detailed mechanical styling.</p>
+                <strong>$489</strong>
+            </div>
+
+            <div class="watch-card">
+                <h3>Silver Chrono</h3>
+                <p>Sporty silver chronograph with multiple dial details and premium bracelet.</p>
+                <strong>$339</strong>
+            </div>
+
+            <div class="watch-card">
+                <h3>Elegant Rose</h3>
+                <p>Rose-gold inspired watch with an elegant dial and sophisticated bracelet.</p>
+                <strong>$369</strong>
+            </div>
+
+            <div class="watch-card">
+                <h3>Sport Pro</h3>
+                <p>Durable sporty watch with a bold dial designed for an active lifestyle.</p>
+                <strong>$289</strong>
+            </div>
+
+            <div class="watch-card">
+                <h3>Royal Silver</h3>
+                <p>Premium silver-tone watch with an elegant dial and polished bracelet.</p>
+                <strong>$399</strong>
+            </div>
+
+            <div class="watch-card">
+                <h3>Mechanical Skeleton</h3>
+                <p>Eye-catching mechanical skeleton design with sophisticated luxury styling.</p>
+                <strong>$549</strong>
+            </div>
+
+            <div class="watch-card">
+                <h3>Platinum Elite</h3>
+                <p>High-end inspired watch with premium metallic finishing and detailed dial.</p>
+                <strong>$699</strong>
+            </div>
+
+            <div class="watch-card">
+                <h3>Classic Black Leather</h3>
+                <p>Traditional black leather watch with a clean dial and timeless appearance.</p>
+                <strong>$259</strong>
+            </div>
+
+
         </div>
 
-        <div class="watch-card">
-            <h3>Executive Black</h3>
-            <p>Modern black watch with a clean dial and durable design for professional use.</p>
-            <strong>$249</strong>
-        </div>
-
-        <div class="watch-card">
-            <h3>Silver Prestige</h3>
-            <p>Classic silver watch with polished finishing and reliable movement.</p>
-            <strong>$279</strong>
-        </div>
-
-        <div class="watch-card">
-            <h3>Golden Heritage</h3>
-            <p>Vintage-inspired gold watch with a traditional dial and elegant bracelet.</p>
-            <strong>$449</strong>
-        </div>
-
-        <div class="watch-card">
-            <h3>Modern Chronograph</h3>
-            <p>Sporty chronograph watch with multiple sub-dials and premium construction.</p>
-            <strong>$329</strong>
-        </div>
-
-        <div class="watch-card">
-            <h3>Ocean Blue</h3>
-            <p>Stylish blue-dial watch with stainless steel case and modern appearance.</p>
-            <strong>$259</strong>
-        </div>
-
-        <div class="watch-card">
-            <h3>Midnight Steel</h3>
-            <p>Dark stainless steel watch with a minimalist dial and bold contemporary style.</p>
-            <strong>$319</strong>
-        </div>
-
-        <div class="watch-card">
-            <h3>Vintage Leather</h3>
-            <p>Classic vintage watch with a premium leather strap and timeless design.</p>
-            <strong>$229</strong>
-        </div>
-
-        <div class="watch-card">
-            <h3>Diamond Elite</h3>
-            <p>Premium luxury watch with elegant detailing and sparkling decorative accents.</p>
-            <strong>$599</strong>
-        </div>
-
-        <div class="watch-card">
-            <h3>Urban Smart</h3>
-            <p>Modern smartwatch-inspired design with a clean display and lightweight body.</p>
-            <strong>$199</strong>
-        </div>
-
-        <div class="watch-card">
-            <h3>Classic Brown</h3>
-            <p>Elegant brown leather watch with a detailed dial and polished case.</p>
-            <strong>$239</strong>
-        </div>
-
-        <div class="watch-card">
-            <h3>Titanium Pro</h3>
-            <p>Lightweight sporty watch with modern styling and a durable construction.</p>
-            <strong>$379</strong>
-        </div>
-
-        <div class="watch-card">
-            <h3>Royal Blue Chronograph</h3>
-            <p>Bold blue chronograph with detailed sub-dials and metallic finishing.</p>
-            <strong>$359</strong>
-        </div>
-
-        <div class="watch-card">
-            <h3>Classic White</h3>
-            <p>Minimal white dial with elegant markers and a refined premium case.</p>
-            <strong>$219</strong>
-        </div>
-
-        <div class="watch-card">
-            <h3>Black Luxury</h3>
-            <p>Premium all-black watch with bold details and a powerful luxury appearance.</p>
-            <strong>$429</strong>
-        </div>
-
-        <div class="watch-card">
-            <h3>Heritage Automatic</h3>
-            <p>Traditional automatic-inspired watch with detailed mechanical styling.</p>
-            <strong>$489</strong>
-        </div>
-
-        <div class="watch-card">
-            <h3>Silver Chrono</h3>
-            <p>Sporty silver chronograph with multiple dial details and premium bracelet.</p>
-            <strong>$339</strong>
-        </div>
-
-        <div class="watch-card">
-            <h3>Elegant Rose</h3>
-            <p>Rose-gold inspired watch with an elegant dial and sophisticated bracelet.</p>
-            <strong>$369</strong>
-        </div>
-
-        <div class="watch-card">
-            <h3>Sport Pro</h3>
-            <p>Durable sporty watch with a bold dial designed for an active lifestyle.</p>
-            <strong>$289</strong>
-        </div>
-
-        <div class="watch-card">
-            <h3>Royal Silver</h3>
-            <p>Premium silver-tone watch with an elegant dial and polished bracelet.</p>
-            <strong>$399</strong>
-        </div>
-
-        <div class="watch-card">
-            <h3>Mechanical Skeleton</h3>
-            <p>Eye-catching mechanical skeleton design with sophisticated luxury styling.</p>
-            <strong>$549</strong>
-        </div>
-
-        <div class="watch-card">
-            <h3>Platinum Elite</h3>
-            <p>High-end inspired watch with premium metallic finishing and detailed dial.</p>
-            <strong>$699</strong>
-        </div>
-
-        <div class="watch-card">
-            <h3>Classic Black Leather</h3>
-            <p>Traditional black leather watch with a clean dial and timeless appearance.</p>
-            <strong>$259</strong>
-        </div>
-
-
-    </div>
-
-</section>
+    </section>
     <!-- =====================================================
      CART PANEL
 ===================================================== -->
@@ -588,45 +589,45 @@
                 <h3>Quick Links</h3>
 
                 <a href="index.html">Home</a>
-                <a href="luxary.html">Luxury Watches</a>
+                <a href="luxury.html">Luxury Watches</a>
                 <a href="smart.html">Smart Watches</a>
                 <a href="vintage.html">Vintage Watches</a>
 
             </div>
 
 
-           <div class="footer-column">
+            <div class="footer-column">
 
                 <h3>Contact</h3>
-                  <h3>📍 Address</h3>
-                        <p>Karachi, Pakistan</p>
-                           <h3>📞Phone</h3>
-                        <p>+92 300 12345678</p>
-                        <h3>📧Email</h3>
-                        <p>support@albertoclocks.com</p>
-                        <h3>⌚Working Hours</h3>
-                        <p>Mon - Sat: 9:00 AM - 8:00 PM</p>
-                    
+                <h3>📍 Address</h3>
+                <p>Karachi, Pakistan</p>
+                <h3>📞Phone</h3>
+                <p>+92 300 12345678</p>
+                <h3>📧Email</h3>
+                <p>support@albertoclocks.com</p>
+                <h3>⌚Working Hours</h3>
+                <p>Mon - Sat: 9:00 AM - 8:00 PM</p>
+
 
             </div>
 
         </div>
-          
+
         <div class="social-icons">
 
-    <a href="https://wa.me/923001234567" target="_blank">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
+            <a href="https://wa.me/923001234567" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
 
-    <a href="https://www.facebook.com/" target="_blank">
-        <i class="fa-brands fa-facebook"></i>
-    </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
 
-    <a href="https://www.instagram.com/" target="_blank">
-        <i class="fa-brands fa-instagram"></i>
-    </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
 
-</div>
+        </div>
 
         <div class="footer-bottom">
 
@@ -637,6 +638,8 @@
         </div>
         <div>
     </footer>
+
     <script src="script.js"></script>
 </body>
+
 </html>

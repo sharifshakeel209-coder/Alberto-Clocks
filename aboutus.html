@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +10,13 @@
 </head>
 <style>
 
-   
-  
+
+
 </style>
+
 <body>
 
-    
+
     <header class="navbar">
 
         <a href="#home" class="logo">
@@ -23,23 +25,25 @@
 
         <nav class="nav-links">
             <a href="index.html">Home</a>
-                <li class="dropdown">
-         <a href="#">Categories ▾</a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="toggleDropdown()">
+                    CATEGORIES <span>▼</span>
+                </button>
 
-    <ul class="dropdown-menu">
-        <li><a href="luxary.html">Luxury Watches</a></li>
-        <li><a href="smart.html">Smart Watches</a></li>
-        <li><a href="vintage.html">Vintage Watches</a></li>
-    </ul>
-</li>
-           
+                <div class="dropdown-content" id="categoryDropdown">
+                    <a href="luxury.html">LUXURY</a>
+                    <a href="vintage.html">VINTAGE</a>
+                    <a href="smart.html">SMART WATCHES</a>
+                </div>
+            </div>
+
             <a href="gallery 2.html">Gallery</a>
             <a href="contact-us.html">Contact</a>
             <a href="aboutus.html">Aboutus</a>
-           
+
         </nav>
 
-         <div class="nav-right">
+        <div class="nav-right">
 
             <div class="search-box">
                 <input type="text" id="searchInput" placeholder="Search watches...">
@@ -61,183 +65,175 @@
 
 
 
-<div>
+    <div>
         <button class="btn prev" id="prevBtn">
-        
+
         </button>
 
         <button class="btn next" id="nextBtn">
-        
+
         </button>
-</div>
-
-<section class="our-story">
-
-    <div class="story-container">
-
-        <div class="story-content">
-
-            <div class="story-label">
-                Our Story
-            </div>
-
-            <h2 class="story-title">
-                TIME IS<br>
-                <span>EVERYTHING.</span>
-            </h2>
-
-            <p class="story-text">
-                Alberto Clocks was created from a simple idea:
-                a clock should be more than something that tells
-                you the time. It should be a statement of style,
-                precision and personality.
-            </p>
-
-            <p class="story-text">
-                We combine timeless design with modern craftsmanship
-                to create clocks that look exceptional today and
-                remain meaningful for years to come.
-            </p>
-
-            <div class="story-highlight">
-                "Every second matters. We believe your time deserves
-                to be represented beautifully."
-            </div>
-
-        </div>
-
-
-        <div class="story-visual">
-
-            <div class="story-clock">
-
-                <div class="clock-hand-hour"></div>
-                <div class="clock-hand-minute"></div>
-                <div class="clock-center"></div>
-
-            </div>
-
-        </div>
-
     </div>
 
-</section>
+    <section class="our-story">
+
+        <div class="story-container">
+
+            <div class="story-content">
+
+                <div class="story-label">
+                    Our Story
+                </div>
+
+                <h2 class="story-title">
+                    TIME IS<br>
+                    <span>EVERYTHING.</span>
+                </h2>
+
+                <p class="story-text">
+                    Alberto Clocks was created from a simple idea:
+                    a clock should be more than something that tells
+                    you the time. It should be a statement of style,
+                    precision and personality.
+                </p>
+
+                <p class="story-text">
+                    We combine timeless design with modern craftsmanship
+                    to create clocks that look exceptional today and
+                    remain meaningful for years to come.
+                </p>
+
+                <div class="story-highlight">
+                    "Every second matters. We believe your time deserves
+                    to be represented beautifully."
+                </div>
+
+            </div>
 
 
-<!-- =========================================
+            <div class="story-visual">
+
+                <div class="story-clock">
+
+                    <div class="clock-hand-hour"></div>
+                    <div class="clock-hand-minute"></div>
+                    <div class="clock-center"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
      ABOUT US - MOVING WATCH VIDEO
      ========================================= -->
 
-<section class="about-us">
+    <section class="about-us">
 
-    <video
-        class="about-video"
-        autoplay
-        muted
-        loop
-        playsinline
-        poster="images/watch-poster.jpg">
+        <video class="about-video" autoplay muted loop playsinline poster="images/watch-poster.jpg">
 
-        <source
-            src="videos/alberto-watch.mp4"
-            type="video/mp4">
+            <source src="videos/alberto-watch.mp4" type="video/mp4">
 
-        Your browser does not support video.
-    </video>
+            Your browser does not support video.
+        </video>
 
 
-    <div class="about-overlay"></div>
+        <div class="about-overlay"></div>
 
 
-    <div class="about-content">
+        <div class="about-content">
 
-        <div class="about-small-title">
-            About Alberto Clocks
+            <div class="about-small-title">
+                About Alberto Clocks
+            </div>
+
+            <h2 class="about-title">
+                CRAFTED FOR<br>
+                <span>EVERY SECOND.</span>
+            </h2>
+
+            <p class="about-description">
+                At Alberto Clocks, we believe time is not simply
+                something we measure — it is something we experience.
+                Our collection brings together elegant design,
+                attention to detail and a passion for timeless
+                craftsmanship.
+
+                <br><br>
+
+                From the first glance to every passing second,
+                Alberto Clocks is designed to make time feel
+                extraordinary.
+            </p>
+
+            <a href="gallery 2.html" class="about-button">
+                Explore Our Collection
+            </a>
+
         </div>
 
-        <h2 class="about-title">
-            CRAFTED FOR<br>
-            <span>EVERY SECOND.</span>
-        </h2>
-
-        <p class="about-description">
-            At Alberto Clocks, we believe time is not simply
-            something we measure — it is something we experience.
-            Our collection brings together elegant design,
-            attention to detail and a passion for timeless
-            craftsmanship.
-
-            <br><br>
-
-            From the first glance to every passing second,
-            Alberto Clocks is designed to make time feel
-            extraordinary.
-        </p>
-
-        <a href="gallery 2.html" class="about-button">
-            Explore Our Collection
-        </a>
-
-    </div>
-
-</section>
+    </section>
 
 
-<!-- =========================================
+    <!-- =========================================
      OUR VALUES
      ========================================= -->
 
-<section class="values">
+    <section class="values">
 
-    <div class="values-container">
+        <div class="values-container">
 
-        <div class="value-card">
+            <div class="value-card">
 
-            <div class="value-number">01 — PRECISION</div>
+                <div class="value-number">01 — PRECISION</div>
 
-            <h3>Every Second Matters</h3>
+                <h3>Every Second Matters</h3>
 
-            <p>
-                We pay attention to the smallest details because
-                precision is at the heart of every great timepiece.
-            </p>
+                <p>
+                    We pay attention to the smallest details because
+                    precision is at the heart of every great timepiece.
+                </p>
+
+            </div>
+
+
+            <div class="value-card">
+
+                <div class="value-number">02 — DESIGN</div>
+
+                <h3>Timeless Aesthetics</h3>
+
+                <p>
+                    Clean lines, sophisticated finishes and modern
+                    character come together to create clocks that
+                    never go out of style.
+                </p>
+
+            </div>
+
+
+            <div class="value-card">
+
+                <div class="value-number">03 — PASSION</div>
+
+                <h3>Made With Purpose</h3>
+
+                <p>
+                    Alberto Clocks is built around a passion for
+                    beautiful timepieces and the moments they
+                    become part of.
+                </p>
+
+            </div>
 
         </div>
 
-
-        <div class="value-card">
-
-            <div class="value-number">02 — DESIGN</div>
-
-            <h3>Timeless Aesthetics</h3>
-
-            <p>
-                Clean lines, sophisticated finishes and modern
-                character come together to create clocks that
-                never go out of style.
-            </p>
-
-        </div>
-
-
-        <div class="value-card">
-
-            <div class="value-number">03 — PASSION</div>
-
-            <h3>Made With Purpose</h3>
-
-            <p>
-                Alberto Clocks is built around a passion for
-                beautiful timepieces and the moments they
-                become part of.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-  <div class="cart-panel" id="cartPanel">
+    </section>
+    <div class="cart-panel" id="cartPanel">
 
         <div class="cart-header">
 
@@ -283,55 +279,55 @@
     <!-- =====================================================
      FOOTER
 ===================================================== -->
-   <section class="faq-section">
-    <h2>Frequently Asked Questions</h2>
+    <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
 
-    <div class="faq">
-        <button class="faq-question">
-            What types of watches do you sell?
-            <span>+</span>
-        </button>
-        <div class="faq-answer">
-            <p>We sell luxury, smart, and vintage watches.</p>
+        <div class="faq">
+            <button class="faq-question">
+                What types of watches do you sell?
+                <span>+</span>
+            </button>
+            <div class="faq-answer">
+                <p>We sell luxury, smart, and vintage watches.</p>
+            </div>
         </div>
-    </div>
 
-    <div class="faq">
-        <button class="faq-question">
-            Do you offer delivery?
-            <span>+</span>
-        </button>
-        <div class="faq-answer">
-            <p>Yes, we offer delivery to different locations.</p>
+        <div class="faq">
+            <button class="faq-question">
+                Do you offer delivery?
+                <span>+</span>
+            </button>
+            <div class="faq-answer">
+                <p>Yes, we offer delivery to different locations.</p>
+            </div>
         </div>
-    </div>
 
-    <div class="faq">
-        <button class="faq-question">
-            Are your watches original?
-            <span>+</span>
-        </button>
-        <div class="faq-answer">
-            <p>Yes, our watches are authentic and carefully selected.</p>
+        <div class="faq">
+            <button class="faq-question">
+                Are your watches original?
+                <span>+</span>
+            </button>
+            <div class="faq-answer">
+                <p>Yes, our watches are authentic and carefully selected.</p>
+            </div>
         </div>
-    </div>
 
-    <div class="faq">
-        <button class="faq-question">
-            How can I contact you?
-            <span>+</span>
-        </button>
-        <div class="faq-answer">
-            <p>You can contact us through our contact page.</p>
+        <div class="faq">
+            <button class="faq-question">
+                How can I contact you?
+                <span>+</span>
+            </button>
+            <div class="faq-answer">
+                <p>You can contact us through our contact page.</p>
+            </div>
         </div>
-    </div>
-     </div>
-</section>
-       
+        </div>
+    </section>
+
 
     <footer id="footer">
 
-     
+
         <div class="footer-container">
 
             <div class="footer-column">
@@ -351,7 +347,7 @@
                 <h3>Quick Links</h3>
 
                 <a href="index.html">Home</a>
-                <a href="luxary.html">Luxury Watches</a>
+                <a href="luxury.html">Luxury Watches</a>
                 <a href="smart.html">Smart Watches</a>
                 <a href="vintage.html">Vintage Watches</a>
 
@@ -361,34 +357,34 @@
             <div class="footer-column">
 
                 <h3>Contact</h3>
-                  <h3>📍 Address</h3>
-                        <p>Karachi, Pakistan</p>
-                           <h3>📞Phone</h3>
-                        <p>+92 300 12345678</p>
-                        <h3>📧Email</h3>
-                        <p>support@albertoclocks.com</p>
-                        <h3>⌚Working Hours</h3>
-                        <p>Mon - Sat: 9:00 AM - 8:00 PM</p>
-                    
+                <h3>📍 Address</h3>
+                <p>Karachi, Pakistan</p>
+                <h3>📞Phone</h3>
+                <p>+92 300 12345678</p>
+                <h3>📧Email</h3>
+                <p>support@albertoclocks.com</p>
+                <h3>⌚Working Hours</h3>
+                <p>Mon - Sat: 9:00 AM - 8:00 PM</p>
+
 
             </div>
         </div>
 
-   <div class="social-icons">
+        <div class="social-icons">
 
-    <a href="https://wa.me/923001234567" target="_blank">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
+            <a href="https://wa.me/923001234567" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
 
-    <a href="https://www.facebook.com/" target="_blank">
-        <i class="fa-brands fa-facebook"></i>
-    </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
 
-    <a href="https://www.instagram.com/" target="_blank">
-        <i class="fa-brands fa-instagram"></i>
-    </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
 
-</div>
+        </div>
 
         <div class="footer-bottom">
 
@@ -399,7 +395,8 @@
         </div>
         <div>
 
-</footer>
+    </footer>
     <script src="script.js"></script>
 </body>
+
 </html>

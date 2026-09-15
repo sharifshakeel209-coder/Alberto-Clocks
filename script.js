@@ -13,11 +13,11 @@ let currentSlide = 0;
 
 function showSlide(index) {
 
-    slides.forEach(function(slide) {
+    slides.forEach(function (slide) {
         slide.classList.remove("active");
     });
 
-    dots.forEach(function(dot) {
+    dots.forEach(function (dot) {
         dot.classList.remove("active");
     });
 
@@ -43,9 +43,9 @@ nextBtn.addEventListener("click", nextSlide);
 prevBtn.addEventListener("click", previousSlide);
 
 
-dots.forEach(function(dot, index) {
+dots.forEach(function (dot, index) {
 
-    dot.addEventListener("click", function() {
+    dot.addEventListener("click", function () {
 
         showSlide(index);
 
@@ -56,7 +56,7 @@ dots.forEach(function(dot, index) {
 
 /* Automatic slider */
 
-setInterval(function() {
+setInterval(function () {
 
     nextSlide();
 
@@ -70,16 +70,16 @@ setInterval(function() {
 const menuBtn = document.getElementById("menuBtn");
 const navLinks = document.querySelector(".nav-links");
 
-menuBtn.addEventListener("click", function() {
+menuBtn.addEventListener("click", function () {
 
     navLinks.classList.toggle("active");
 
 });
 
 
-document.querySelectorAll(".nav-links a").forEach(function(link) {
+document.querySelectorAll(".nav-links a").forEach(function (link) {
 
-    link.addEventListener("click", function() {
+    link.addEventListener("click", function () {
 
         navLinks.classList.remove("active");
 
@@ -96,9 +96,9 @@ const revealSections = document.querySelectorAll(".reveal");
 
 
 const observer = new IntersectionObserver(
-    function(entries) {
+    function (entries) {
 
-        entries.forEach(function(entry) {
+        entries.forEach(function (entry) {
 
             if (entry.isIntersecting) {
 
@@ -115,7 +115,7 @@ const observer = new IntersectionObserver(
 );
 
 
-revealSections.forEach(function(section) {
+revealSections.forEach(function (section) {
 
     observer.observe(section);
 
@@ -160,15 +160,15 @@ const checkoutBtn =
    ADD TO CART
 ===================================================== */
 
-addButtons.forEach(function(button) {
+addButtons.forEach(function (button) {
 
-    button.addEventListener("click", function() {
+    button.addEventListener("click", function () {
 
         const name = button.dataset.name;
         const price = Number(button.dataset.price);
 
 
-        const existingProduct = cart.find(function(item) {
+        const existingProduct = cart.find(function (item) {
 
             return item.name === name;
 
@@ -204,7 +204,7 @@ addButtons.forEach(function(button) {
         button.classList.add("added");
 
 
-        setTimeout(function() {
+        setTimeout(function () {
 
             button.textContent = "Add to Cart";
 
@@ -258,7 +258,7 @@ function displayCart() {
     let quantity = 0;
 
 
-    cart.forEach(function(item, index) {
+    cart.forEach(function (item, index) {
 
         total += item.price * item.quantity;
 
@@ -328,9 +328,9 @@ function displayCart() {
 
     /* Increase quantity */
 
-    document.querySelectorAll(".increase").forEach(function(button) {
+    document.querySelectorAll(".increase").forEach(function (button) {
 
-        button.addEventListener("click", function() {
+        button.addEventListener("click", function () {
 
             const index =
                 Number(button.dataset.index);
@@ -348,9 +348,9 @@ function displayCart() {
 
     /* Decrease quantity */
 
-    document.querySelectorAll(".decrease").forEach(function(button) {
+    document.querySelectorAll(".decrease").forEach(function (button) {
 
-        button.addEventListener("click", function() {
+        button.addEventListener("click", function () {
 
             const index =
                 Number(button.dataset.index);
@@ -378,9 +378,9 @@ function displayCart() {
 
     /* Remove */
 
-    document.querySelectorAll(".remove-item").forEach(function(button) {
+    document.querySelectorAll(".remove-item").forEach(function (button) {
 
-        button.addEventListener("click", function() {
+        button.addEventListener("click", function () {
 
             const index =
                 Number(button.dataset.index);
@@ -402,7 +402,7 @@ function displayCart() {
    OPEN CART
 ===================================================== */
 
-cartIcon.addEventListener("click", function() {
+cartIcon.addEventListener("click", function () {
 
     cartPanel.classList.add("active");
 
@@ -413,7 +413,7 @@ cartIcon.addEventListener("click", function() {
    CLOSE CART
 ===================================================== */
 
-closeCart.addEventListener("click", function() {
+closeCart.addEventListener("click", function () {
 
     cartPanel.classList.remove("active");
 
@@ -424,7 +424,7 @@ closeCart.addEventListener("click", function() {
    CHECKOUT
 ===================================================== */
 
-checkoutBtn.addEventListener("click", function() {
+checkoutBtn.addEventListener("click", function () {
 
     if (cart.length === 0) {
 
@@ -451,9 +451,9 @@ const viewButtons =
     document.querySelectorAll(".view-btn");
 
 
-viewButtons.forEach(function(button) {
+viewButtons.forEach(function (button) {
 
-    button.addEventListener("click", function() {
+    button.addEventListener("click", function () {
 
         const name = button.dataset.name;
 
@@ -492,7 +492,7 @@ function searchProducts() {
         document.querySelectorAll(".product-card");
 
 
-    products.forEach(function(product) {
+    products.forEach(function (product) {
 
         const productText =
             product.textContent.toLowerCase();
@@ -524,7 +524,7 @@ searchBtn.addEventListener(
 
 searchInput.addEventListener(
     "keyup",
-    function(event) {
+    function (event) {
 
         if (event.key === "Enter") {
 
@@ -542,25 +542,34 @@ searchInput.addEventListener(
 
 displayCart();
 
-    const questions = document.querySelectorAll(".faq-question");
+const questions = document.querySelectorAll(".faq-question");
 
-    questions.forEach(question => {
-        question.addEventListener("click", () => {
+questions.forEach(question => {
+    question.addEventListener("click", () => {
 
-            const answer = question.nextElementSibling;
-            const icon = question.querySelector("span");
+        const answer = question.nextElementSibling;
+        const icon = question.querySelector("span");
 
-            if (answer.style.maxHeight) {
-                answer.style.maxHeight = null;
-                icon.textContent = "+";
-            } else {
-                answer.style.maxHeight = answer.scrollHeight + "px";
-                icon.textContent = "−";
-            }
-        });
+        if (answer.style.maxHeight) {
+            answer.style.maxHeight = null;
+            icon.textContent = "+";
+        } else {
+            answer.style.maxHeight = answer.scrollHeight + "px";
+            icon.textContent = "−";
+        }
     });
+});
 
-    
+function toggleDropdown() {
+    document.getElementById("categoryDropdown").classList.toggle("show");
+}
+
+// Dropdown ke bahar click karne par close
+window.onclick = function (event) {
+    if (!event.target.closest(".dropdown")) {
+        document.getElementById("categoryDropdown").classList.remove("show");
+    }
+}
 
 
-  
+
