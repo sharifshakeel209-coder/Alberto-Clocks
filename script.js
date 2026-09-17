@@ -73,6 +73,9 @@ const navMenu = document.getElementById("navMenu");
 hamburger.addEventListener("click", function () {
     navMenu.classList.toggle("active");
 });
+function toggleMenu() {
+    document.getElementById("navMenu").classList.toggle("active");
+}
 
 
 
