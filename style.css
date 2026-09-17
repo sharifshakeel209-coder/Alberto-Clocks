@@ -2348,52 +2348,45 @@ footer>p {
 }
 .hamburger {
     display: none;
-    font-size: 28px;
     background: none;
     border: none;
     color: white;
+    font-size: 30px;
     cursor: pointer;
 }
 
-/* Navbar Menu */
-.nav-menu {
-    display: flex;
-    gap: 25px;
-    align-items: center;
-}
-
-.nav-menu a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-/* Mobile Screen */
 @media (max-width: 768px) {
 
     .hamburger {
         display: block;
+        margin-left: auto;
+        z-index: 1001;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .nav-menu {
         display: none;
-        flex-direction: column;
-        background: #111;
         position: absolute;
-        top: 70px;
-        right: 0;
-        width: 200px;
-        padding: 20px;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #111;
+        flex-direction: column;
+        padding: 15px 0;
         z-index: 1000;
     }
 
-    /* Menu Open */
     .nav-menu.active {
         display: flex;
     }
 
     .nav-menu a {
-        padding: 12px;
-        width: 100%;
+        display: block;
+        padding: 12px 20px;
     }
 }
