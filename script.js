@@ -67,14 +67,13 @@ setInterval(function () {
    MOBILE MENU
 ===================================================== */
 
-const menuBtn = document.getElementById("menuBtn");
-const navLinks = document.querySelector(".nav-links");
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("navMenu");
 
-menuBtn.addEventListener("click", function () {
-
-    navLinks.classList.toggle("active");
-
+hamburger.addEventListener("click", function () {
+    navMenu.classList.toggle("active");
 });
+
 
 
 document.querySelectorAll(".nav-links a").forEach(function (link) {
